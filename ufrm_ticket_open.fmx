@@ -1,0 +1,153 @@
+inherited frm_ticket_open: Tfrm_ticket_open
+  Caption = 'Ticket - Abrir Chamado.'
+  DesignerMasterStyle = 0
+  inherited toolbar_top: TToolBar
+    inherited rct_top: TRectangle
+      inherited btn_menu: TButton
+        OnClick = btn_menuClick
+      end
+    end
+  end
+  inherited toolbar_botton: TToolBar
+    inherited rct_botton: TRectangle
+      object btn_open: TButton
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 550.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'speedbuttonstyle'
+        TabOrder = 0
+        Text = 'Abrir'
+      end
+      object btn_post: TButton
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 455.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'speedbuttonstyle'
+        TabOrder = 1
+        Text = 'Salvar'
+      end
+    end
+  end
+  inherited lyt_center: TLayout
+    inherited vsb_center: TVertScrollBox
+      Viewport.Width = 620.000000000000000000
+      Viewport.Height = 360.000000000000000000
+      object lyt_client_contract: TLayout
+        Align = Top
+        Size.Width = 620.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lbl_client_contract: TLabel
+          Align = Client
+          Size.Width = 620.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Contrato'
+          TabOrder = 0
+          object cmb_client_contract: TComboBox
+            Align = Client
+            Margins.Top = 20.000000000000000000
+            Size.Width = 620.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+      end
+      object lyt_ticket_category_sub: TLayout
+        Align = Top
+        Position.Y = 110.000000000000000000
+        Size.Width = 620.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lbl_ticket_category_sub: TLabel
+          Align = Client
+          Size.Width = 620.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Subcategoria'
+          TabOrder = 0
+          object cmb_ticket_category_sub: TComboBox
+            Align = Client
+            Margins.Top = 20.000000000000000000
+            Size.Width = 620.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+      end
+      object lyt_ticket_category: TLayout
+        Align = Top
+        Position.Y = 55.000000000000000000
+        Size.Width = 620.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object lbl_ticket_category: TLabel
+          Align = Client
+          Size.Width = 620.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Categoria'
+          TabOrder = 0
+          object cmb_ticket_category: TComboBox
+            Align = Client
+            Margins.Top = 20.000000000000000000
+            Size.Width = 620.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+      end
+      object lyt_ticket_reason: TLayout
+        Align = Client
+        Size.Width = 620.000000000000000000
+        Size.Height = 195.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object lbl_ticket_reason: TLabel
+          Align = Client
+          Size.Width = 620.000000000000000000
+          Size.Height = 195.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.VertAlign = Leading
+          Text = 'Motivo'
+          TabOrder = 0
+          object memo_ticket_reason: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            Align = Client
+            Margins.Top = 20.000000000000000000
+            Size.Width = 620.000000000000000000
+            Size.Height = 175.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Viewport.Width = 620.000000000000000000
+            Viewport.Height = 175.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/05/23 12:52:21.000.592,=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/05/23 12:54:12.000.030,=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/05/23 18:39:07.000.034,=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/05/23 18:40:51.000.874,C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\mobilesup\ufrm_mobilesup.fmx</Transaction>
+    <Transaction>2018/05/23 18:40:51.000.874,C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\development\ccsolutions\ccsolutions_mob\mobilesup\ufrm_mobilesup.pas</Transaction>
+    <Transaction>2018/05/23 18:41:02.000.655,C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\development\ccsolutions\ccsolutions_mob\mobilesup\mobilesup.dproj</Transaction>
+    <Transaction>2018/05/23 19:43:06.000.510,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit2.pas</Transaction>
+    <Transaction>2018/05/23 19:43:24.000.524,=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_main_default.pas</Transaction>
+    <Transaction>2018/05/23 19:43:42.000.992,=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_default.pas</Transaction>
+    <Transaction>2018/05/23 19:45:13.000.648,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit2.pas</Transaction>
+    <Transaction>2018/05/23 19:45:21.000.945,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit2.fmx=C:\development\ccsolutions\ccsolutions_mob\ufrm_login_client.fmx</Transaction>
+    <Transaction>2018/05/23 19:45:21.000.945,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit2.pas=C:\development\ccsolutions\ccsolutions_mob\ufrm_login_client.pas</Transaction>
+    <Transaction>2018/05/23 20:02:17.000.942,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2018/05/23 20:02:18.000.532,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2018/05/23 20:02:57.000.179,C:\development\ccsolutions\ccsolutions_mob\mobilesup\ClientModuleUnit1.pas=C:\development\ccsolutions\ccsolutions_mob\ufrm_cm.pas</Transaction>
+    <Transaction>2018/05/23 20:02:57.000.179,C:\development\ccsolutions\ccsolutions_mob\mobilesup\ClientModuleUnit1.dfm=C:\development\ccsolutions\ccsolutions_mob\ufrm_cm.dfm</Transaction>
+    <Transaction>2018/05/23 20:03:43.000.336,C:\development\ccsolutions\ccsolutions_mob\mobilesup\ClientClassesUnit1.pas=C:\development\ccsolutions\ccsolutions_mob\ufrm_cc.pas</Transaction>
+    <Transaction>2018/05/25 10:51:50.000.260,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/25 10:52:08.000.620,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_2.pas</Transaction>
+    <Transaction>2018/05/25 10:52:08.000.620,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_2.fmx</Transaction>
+    <Transaction>2018/05/25 10:52:49.000.026,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_default.pas=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_1.pas</Transaction>
+    <Transaction>2018/05/25 10:52:49.000.026,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_default.fmx=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_1.fmx</Transaction>
+    <Transaction>2018/05/25 12:06:54.000.438,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_1.fmx=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_default_1.fmx</Transaction>
+    <Transaction>2018/05/25 12:06:54.000.438,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_1.pas=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_default_1.pas</Transaction>
+    <Transaction>2018/05/25 12:07:01.000.438,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_2.fmx=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_default_2.fmx</Transaction>
+    <Transaction>2018/05/25 12:07:01.000.438,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_form_2.pas=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_default_2.pas</Transaction>
+    <Transaction>2018/05/26 15:33:36.000.259,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/26 15:33:50.000.525,C:\development\ccsolutions\ccsolutions_mob\ufrm_main.pas=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/26 15:33:50.000.525,C:\development\ccsolutions\ccsolutions_mob\ufrm_main.fmx=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.fmx</Transaction>
+    <Transaction>2018/05/26 17:52:32.000.683,C:\development\ccsolutions\ccsolutions_mob\ufrm_main.pas=</Transaction>
+    <Transaction>2018/05/26 17:59:36.000.658,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/26 17:59:49.000.783,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas=C:\development\ccsolutions\ccsolutions_mob\ufrm_main.pas</Transaction>
+    <Transaction>2018/05/26 17:59:49.000.783,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\ufrm_main.fmx</Transaction>
+    <Transaction>2018/05/26 18:06:52.000.156,C:\development\ccsolutions\ccsolutions_mob\ufrm_main.pas=</Transaction>
+    <Transaction>2018/05/26 18:07:06.000.375,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_main_base.pas=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_main_default.pas</Transaction>
+    <Transaction>2018/05/26 18:07:06.000.375,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_main_base.fmx=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_main_default.fmx</Transaction>
+    <Transaction>2018/05/26 18:07:41.000.829,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/26 18:08:14.000.266,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_main_base_support.pas=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/26 18:08:14.000.266,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_main_base_support.fmx=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.fmx</Transaction>
+    <Transaction>2018/05/26 18:08:52.000.594,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/26 18:09:17.000.641,C:\development\ccsolutions\ccsolutions_mob\mobilesup\ufrm_main.pas=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/26 18:09:17.000.641,C:\development\ccsolutions\ccsolutions_mob\mobilesup\ufrm_main.fmx=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.fmx</Transaction>
+    <Transaction>2018/05/26 19:21:33.000.040,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_default_1.fmx=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_base_pgc.fmx</Transaction>
+    <Transaction>2018/05/26 19:21:33.000.040,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_default_1.pas=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_base_pgc.pas</Transaction>
+    <Transaction>2018/05/26 19:21:54.000.509,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_default_2.fmx=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_base_smp.fmx</Transaction>
+    <Transaction>2018/05/26 19:21:54.000.509,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_default_2.pas=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_base_smp.pas</Transaction>
+    <Transaction>2018/05/27 13:23:11.000.409,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/27 13:23:30.000.300,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas=C:\development\ccsolutions\ccsolutions_mob\ufrm_ticket_open.pas</Transaction>
+    <Transaction>2018/05/27 13:23:30.000.300,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\ufrm_ticket_open.fmx</Transaction>
+    <Transaction>2018/05/27 13:31:47.000.939,C:\development\ccsolutions\ccsolutions_mob\mobilesup\ufrm_main.pas=</Transaction>
+    <Transaction>2018/05/27 13:31:50.000.767,C:\development\ccsolutions\ccsolutions_mob\models\ufrm_main_base_support.pas=</Transaction>
+    <Transaction>2018/05/27 13:32:04.000.877,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/27 13:32:15.000.924,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_main_base_support.fmx</Transaction>
+    <Transaction>2018/05/27 13:32:15.000.924,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas=C:\development\ccsolutions\ccsolutions_mob\models\ufrm_main_base_support.pas</Transaction>
+    <Transaction>2018/05/27 13:35:02.000.720,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/27 13:35:08.000.236,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\mobilesup\ufrm_main.fmx</Transaction>
+    <Transaction>2018/05/27 13:35:08.000.236,C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas=C:\development\ccsolutions\ccsolutions_mob\mobilesup\ufrm_main.pas</Transaction>
+    <Transaction>2018/05/27 14:20:12.000.723,=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/27 14:20:34.000.769,C:\development\ccsolutions\ccsolutions_mob\ufrm_dm.pas=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.pas</Transaction>
+    <Transaction>2018/05/27 14:20:34.000.769,C:\development\ccsolutions\ccsolutions_mob\ufrm_dm.dfm=C:\development\ccsolutions\ccsolutions_mob\mobilesup\Unit1.dfm</Transaction>
+    <Transaction>2018/05/27 14:24:20.000.645,C:\development\ccsolutions\ccsolutions_mob\ufrm_dm.pas=</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="192.168.88.102:5555"/>
+		<Pmacbook-air iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

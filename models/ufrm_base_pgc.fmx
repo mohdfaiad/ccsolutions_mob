@@ -1,0 +1,239 @@
+object frm_base_pgc: Tfrm_base_pgc
+  Left = 0
+  Top = 0
+  Caption = 'Form Default'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = Designed
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lyt_form: TLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object tbctrl_1: TTabControl
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabcontrolstyle'
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = None
+      Sizes = (
+        640s
+        480s
+        640s
+        480s)
+      object tbitm_record: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'tbitm_record'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object toolbar_record_top: TToolBar
+          Size.Width = 640.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object shw_record_top: TShadowEffect
+            Distance = 3.000000000000000000
+            Direction = 45.000000000000000000
+            Softness = 0.300000011920929000
+            Opacity = 0.600000023841857900
+            ShadowColor = claBlack
+          end
+          object lbl_record: TLabel
+            Align = Contents
+            Size.Width = 640.000000000000000000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'lbl_record'
+            TabOrder = 0
+          end
+          object btn_close_record: TButton
+            Align = Left
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 60.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbutton'
+            TabOrder = 1
+            Text = 'btn_close_record'
+            OnClick = btn_close_recordClick
+          end
+        end
+        object rec_record: TRectangle
+          Align = Client
+          Fill.Color = claWhite
+          Size.Width = 640.000000000000000000
+          Size.Height = 425.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object lyt_record: TLayout
+            Align = Client
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 630.000000000000000000
+            Size.Height = 415.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lsv_record: TListView
+              ItemAppearanceClassName = 'TMultiDetailItemAppearance'
+              ItemEditAppearanceClassName = 'TMultiDetailDeleteAppearance'
+              HeaderAppearanceClassName = 'TListHeaderObjects'
+              FooterAppearanceClassName = 'TListHeaderObjects'
+              Align = Client
+              Margins.Top = 5.000000000000000000
+              Size.Width = 630.000000000000000000
+              Size.Height = 388.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              StyleLookup = 'listviewstyle'
+              OnItemClick = lsv_recordItemClick
+            end
+            object edt_search: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 1
+              Size.Width = 630.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              object btnedt_search: TSearchEditButton
+                CanFocus = False
+                Cursor = crArrow
+                Size.Width = 28.000000000000000000
+                Size.Height = 18.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+      object tbitm_data: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'tbitm_data'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object tlb_data_botton: TToolBar
+          Align = Bottom
+          Position.Y = 425.000000000000000000
+          Size.Width = 640.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toolbarstyle'
+          TabOrder = 0
+        end
+        object toolbar_data_top: TToolBar
+          Size.Width = 640.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object shw_data_top: TShadowEffect
+            Distance = 3.000000000000000000
+            Direction = 45.000000000000000000
+            Softness = 0.300000011920929000
+            Opacity = 0.600000023841857900
+            ShadowColor = claBlack
+          end
+          object lbl_data_top: TLabel
+            Align = Contents
+            Size.Width = 640.000000000000000000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'lbl_data_top'
+            TabOrder = 0
+          end
+          object btn_close_data: TButton
+            Align = Left
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 60.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbutton'
+            TabOrder = 1
+            Text = 'btn_close'
+            OnClick = btn_close_dataClick
+          end
+        end
+        object rec_data: TRectangle
+          Align = Client
+          Fill.Color = claWhite
+          Size.Width = 640.000000000000000000
+          Size.Height = 370.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object vsb_data: TVertScrollBox
+            Align = Client
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 630.000000000000000000
+            Size.Height = 360.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'scrollboxstyle'
+            TabOrder = 0
+            Viewport.Width = 630.000000000000000000
+            Viewport.Height = 360.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object actlist_1: TActionList
+    Images = imglist_1
+    Left = 541
+    Top = 199
+    object ChangeTabAction_data: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbitm_data
+    end
+    object ChangeTabAction_record: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbitm_record
+    end
+  end
+  object imglist_1: TImageList
+    Source = <>
+    Destination = <>
+    Left = 541
+    Top = 151
+  end
+end

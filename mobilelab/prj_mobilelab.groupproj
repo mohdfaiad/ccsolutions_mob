@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{405FA199-9262-4F0E-AAD3-8140AA44935E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="mobilelab.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\ccsolutions_wbs\ccsolutions_wbs.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="mobilelab">
+        <MSBuild Projects="mobilelab.dproj"/>
+    </Target>
+    <Target Name="mobilelab:Clean">
+        <MSBuild Projects="mobilelab.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mobilelab:Make">
+        <MSBuild Projects="mobilelab.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ccsolutions_wbs">
+        <MSBuild Projects="..\..\ccsolutions_wbs\ccsolutions_wbs.dproj"/>
+    </Target>
+    <Target Name="ccsolutions_wbs:Clean">
+        <MSBuild Projects="..\..\ccsolutions_wbs\ccsolutions_wbs.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ccsolutions_wbs:Make">
+        <MSBuild Projects="..\..\ccsolutions_wbs\ccsolutions_wbs.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="mobilelab;ccsolutions_wbs"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="mobilelab:Clean;ccsolutions_wbs:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="mobilelab:Make;ccsolutions_wbs:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,48 @@
+inherited frm_insurance: Tfrm_insurance
+  Caption = 'Conv'#234'nios'
+  DesignerMasterStyle = 0
+  inherited lyt_form: TLayout
+    inherited tbctrl_1: TTabControl
+      Sizes = (
+        640s
+        480s
+        640s
+        480s)
+      inherited tbitm_record: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+      end
+      inherited tbitm_data: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited rec_data: TRectangle
+          inherited vsb_data: TVertScrollBox
+            Viewport.Width = 630.000000000000000000
+            Viewport.Height = 360.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = frm_dm.mem_insurance
+    ScopeMappings = <>
+    Left = 304
+    Top = 272
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 304
+    Top = 224
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'ins_first_name'
+      Control = lsv_record
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

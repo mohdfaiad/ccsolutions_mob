@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6BB5ED27-D049-477B-90D8-B32F9A449F88}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="mobilesup.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\ccsolutions_wbs\ccsolutions_wbs.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="mobilesup">
+        <MSBuild Projects="mobilesup.dproj"/>
+    </Target>
+    <Target Name="mobilesup:Clean">
+        <MSBuild Projects="mobilesup.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mobilesup:Make">
+        <MSBuild Projects="mobilesup.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ccsolutions_wbs">
+        <MSBuild Projects="..\..\ccsolutions_wbs\ccsolutions_wbs.dproj"/>
+    </Target>
+    <Target Name="ccsolutions_wbs:Clean">
+        <MSBuild Projects="..\..\ccsolutions_wbs\ccsolutions_wbs.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ccsolutions_wbs:Make">
+        <MSBuild Projects="..\..\ccsolutions_wbs\ccsolutions_wbs.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="mobilesup;ccsolutions_wbs"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="mobilesup:Clean;ccsolutions_wbs:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="mobilesup:Make;ccsolutions_wbs:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

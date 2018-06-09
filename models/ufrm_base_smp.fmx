@@ -1,0 +1,99 @@
+object frm_base_smp: Tfrm_base_smp
+  Left = 0
+  Top = 0
+  Caption = 'Form Default'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = Designed
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object toolbar_top: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'toolbarstyle'
+    TabOrder = 0
+    object rct_top: TRectangle
+      Align = Client
+      Fill.Color = claAliceblue
+      Size.Width = 640.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lbl_form: TLabel
+        Align = Contents
+        Size.Width = 640.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Form Default'
+        TabOrder = 1
+      end
+      object btn_menu: TButton
+        Align = Left
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 48.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'priortoolbutton'
+        TabOrder = 0
+        OnClick = btn_menuClick
+      end
+    end
+  end
+  object toolbar_botton: TToolBar
+    Align = Bottom
+    Position.Y = 430.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'toolbarstyle'
+    TabOrder = 1
+    object rct_botton: TRectangle
+      Align = Client
+      Fill.Color = claAliceblue
+      Size.Width = 640.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+  end
+  object lyt_center: TLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 380.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object rtg_center: TRectangle
+      Align = Client
+      Fill.Color = claAliceblue
+      Size.Width = 640.000000000000000000
+      Size.Height = 380.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object vsb_center: TVertScrollBox
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 620.000000000000000000
+      Size.Height = 360.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 620.000000000000000000
+      Viewport.Height = 360.000000000000000000
+    end
+  end
+end
