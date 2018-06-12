@@ -6,7 +6,7 @@
         <MainSource>mobilelab.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <Platform Condition="'$(Platform)'==''">Android</Platform>
         <TargetedPlatforms>1119</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
@@ -396,10 +396,6 @@
             <Form>frm_main_base_laboratory</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="..\ufrm_login_lab.pas">
-            <Form>frm_login_lab</Form>
-            <FormType>fmx</FormType>
-        </DCCReference>
         <DCCReference Include="..\ufrm_cc.pas"/>
         <DCCReference Include="..\ufrm_dm_rest.pas">
             <Form>frm_dm_rest</Form>
@@ -415,6 +411,10 @@
         <DCCReference Include="..\class_rest_method.pas"/>
         <DCCReference Include="ufrm_main.pas">
             <Form>frm_main</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="..\ufrm_login_lab.pas">
+            <Form>frm_login_lab</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
@@ -1023,5 +1023,6 @@
     </ProjectExtensions>
     <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
     <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <ProjectExtensions/>
     <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
 </Project>

@@ -9,17 +9,43 @@ uses
 
 type
   Tfrm_main_base_laboratory = class(Tfrm_main_base)
-    lbgh_patient: TListBoxGroupHeader;
-    lbi_result: TListBoxItem;
-    lbi_exam: TListBoxItem;
-    lbi_insurance: TListBoxItem;
-    lbgh_doctor: TListBoxGroupHeader;
-    lbi_table_cid: TListBoxItem;
-    lbgh_contact: TListBoxGroupHeader;
-    lbgh_setting: TListBoxGroupHeader;
-    lbi_contact: TListBoxItem;
-    lbi_enterprise: TListBoxItem;
-    lbi_parameter: TListBoxItem;
+    lyt_parameter: TLayout;
+    lytgrdpnl_parameter: TGridPanelLayout;
+    lbl_parameter: TLabel;
+    lyt_result: TLayout;
+    lytgrdpnl_result: TGridPanelLayout;
+    lyt_setting: TLayout;
+    lytgrdpnl_setting: TGridPanelLayout;
+    lbl_setting: TLabel;
+    lyt_enterprise: TLayout;
+    lytgrdpnl_enterprise: TGridPanelLayout;
+    lbl_enterprise: TLabel;
+    lyt_contact: TLayout;
+    lytgrdpnl_contact: TGridPanelLayout;
+    lbl_contact: TLabel;
+    lyt_table_cid: TLayout;
+    lytgrdpnl_table_cid: TGridPanelLayout;
+    lbl_table_cid: TLabel;
+    lyt_attendance: TLayout;
+    lytgrdpnl_attendance: TGridPanelLayout;
+    lbl_attendance: TLabel;
+    lyt_doctor: TLayout;
+    lytgrdpnl_doctor: TGridPanelLayout;
+    lbl_doctor: TLabel;
+    lyt_insurance: TLayout;
+    lytgrdpnl_insurance: TGridPanelLayout;
+    lbl_insurance: TLabel;
+    lyt_exam: TLayout;
+    lytgrdpnl_exam: TGridPanelLayout;
+    lbl_exam: TLabel;
+    lyt_patient: TLayout;
+    lytgrdpnl_patient: TGridPanelLayout;
+    lbl_patient: TLabel;
+    gly_doctor: TGlyph;
+    gly_attendance: TGlyph;
+    gly_setting: TGlyph;
+    gly_patient: TGlyph;
+    lbl_result: TLabel;
   private
     { Private declarations }
   public

@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, ufrm_base_pgc, FMX.ListView.Types, FMX.ListView.Appearances,
   FMX.ListView.Adapters.Base, FMX.Layouts, FMX.ListView, FMX.Objects, FMX.Controls.Presentation, FMX.TabControl, ufrm_dm_rest, class_rest_method,
   FMX.Edit, ufrm_dm, MultiDetailAppearanceU, System.Rtti, System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
-  Data.Bind.Components, Data.Bind.DBScope, FMX.Effects, System.Actions, FMX.ActnList, System.ImageList, FMX.ImgList;
+  Data.Bind.Components, Data.Bind.DBScope, FMX.Effects, System.Actions, FMX.ActnList, System.ImageList, FMX.ImgList, FMX.Maps, FMX.ScrollBox, FMX.Memo;
 
 type
   Tfrm_enterprise = class(Tfrm_base_pgc)
@@ -18,11 +18,10 @@ type
     lyt_field_2: TLayout;
     lbl_param_address: TLabel;
     lbl_nickname: TLabel;
-    edt_param_address: TEdit;
     edt_nickname: TEdit;
-    LinkControlToField2: TLinkControlToField;
     LinkControlToField1: TLinkControlToField;
-    btn_map: TSpeedButton;
+    mem_address: TMemo;
+    LinkControlToField2: TLinkControlToField;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }

@@ -11,9 +11,9 @@ uses
 type
   Tfrm_main = class(Tfrm_main_base_laboratory)
     procedure lbl_loginClick(Sender: TObject);
-    procedure lbi_enterpriseClick(Sender: TObject);
-    procedure lbi_insuranceClick(Sender: TObject);
-    procedure lbi_examClick(Sender: TObject);
+    procedure lbl_enterpriseClick(Sender: TObject);
+    procedure lbl_insuranceClick(Sender: TObject);
+    procedure lbl_examClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -27,10 +27,10 @@ implementation
 
 {$R *.fmx}
 
-procedure Tfrm_main.lbi_enterpriseClick(Sender: TObject);
+procedure Tfrm_main.lbl_enterpriseClick(Sender: TObject);
 begin
   inherited;
-{$IFDEF WIN32}
+  {$IFDEF WIN32}
     frm_enterprise := Tfrm_enterprise.Create(Self);
     frm_enterprise.Show;
   {$ENDIF}
@@ -53,7 +53,7 @@ begin
   end;
 end;
 
-procedure Tfrm_main.lbi_examClick(Sender: TObject);
+procedure Tfrm_main.lbl_examClick(Sender: TObject);
 begin
   inherited;
   {$IFDEF WIN32}
@@ -79,7 +79,7 @@ begin
   end;
 end;
 
-procedure Tfrm_main.lbi_insuranceClick(Sender: TObject);
+procedure Tfrm_main.lbl_insuranceClick(Sender: TObject);
 begin
   inherited;
   {$IFDEF WIN32}

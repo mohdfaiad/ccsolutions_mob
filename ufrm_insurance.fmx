@@ -17,8 +17,8 @@ inherited frm_insurance: Tfrm_insurance
         ExplicitSize.cy = 8.000000000000000000
         inherited rec_data: TRectangle
           inherited vsb_data: TVertScrollBox
-            Viewport.Width = 630.000000000000000000
-            Viewport.Height = 360.000000000000000000
+            Viewport.Width = 608.000000000000000000
+            Viewport.Height = 398.000000000000000000
           end
         end
       end

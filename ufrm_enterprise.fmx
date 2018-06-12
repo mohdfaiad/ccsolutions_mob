@@ -3,74 +3,46 @@ inherited frm_enterprise: Tfrm_enterprise
   DesignerMasterStyle = 0
   inherited lyt_form: TLayout
     inherited tbctrl_1: TTabControl
-      TabHeight = 49.000000000000000000
+      TabIndex = 0
       Sizes = (
         640s
         480s
         640s
         480s)
       inherited tbitm_record: TTabItem
+        IsSelected = True
         ExplicitSize.cx = 8.000000000000000000
         ExplicitSize.cy = 8.000000000000000000
-        inherited toolbar_record_top: TToolBar
-          Size.Height = 48.000000000000000000
-          inherited lbl_record: TLabel
-            Size.Height = 48.000000000000000000
-          end
-          inherited btn_close_record: TButton
-            Size.Width = 48.000000000000000000
-            Size.Height = 38.000000000000000000
-          end
-        end
         inherited rec_record: TRectangle
-          Size.Height = 432.000000000000000000
-          inherited lyt_record: TLayout
-            Size.Height = 422.000000000000000000
-            inherited lsv_record: TListView
-              Size.Height = 385.000000000000000000
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = claWhite
+              Offset = 0.000000000000000000
             end
-            inherited edt_search: TEdit
-              Size.Height = 32.000000000000000000
-              inherited btnedt_search: TSearchEditButton
-                Size.Width = 32.000000000000000000
-                Size.Height = 28.000000000000000000
-              end
-            end
-          end
+            item
+              Color = claWhite
+              Offset = 1.000000000000000000
+            end>
         end
       end
       inherited tbitm_data: TTabItem
+        IsSelected = False
         ExplicitSize.cx = 8.000000000000000000
         ExplicitSize.cy = 8.000000000000000000
-        inherited tlb_data_botton: TToolBar
-          Position.Y = 432.000000000000000000
-          Size.Height = 48.000000000000000000
-        end
-        inherited toolbar_data_top: TToolBar
-          Size.Height = 48.000000000000000000
-          inherited lbl_data_top: TLabel
-            Size.Height = 48.000000000000000000
-          end
-          inherited btn_close_data: TButton
-            Size.Width = 48.000000000000000000
-            Size.Height = 38.000000000000000000
-          end
-        end
         inherited rec_data: TRectangle
-          Size.Height = 384.000000000000000000
           inherited vsb_data: TVertScrollBox
-            Size.Height = 374.000000000000000000
-            Viewport.Width = 630.000000000000000000
-            Viewport.Height = 374.000000000000000000
+            Viewport.Width = 608.000000000000000000
+            Viewport.Height = 398.000000000000000000
             object lyt_field_2: TLayout
               Align = Top
-              Size.Width = 630.000000000000000000
+              Size.Width = 608.000000000000000000
               Size.Height = 55.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 0
               object lbl_nickname: TLabel
                 Align = Client
-                Size.Width = 630.000000000000000000
+                Size.Width = 608.000000000000000000
                 Size.Height = 55.000000000000000000
                 Size.PlatformDefault = False
                 TextSettings.VertAlign = Leading
@@ -80,10 +52,10 @@ inherited frm_enterprise: Tfrm_enterprise
                   Touch.InteractiveGestures = [LongTap, DoubleTap]
                   Align = Bottom
                   TabOrder = 0
-                  TextSettings.Font.Size = 10.000000000000000000
+                  TextSettings.Font.Size = 11.000000000000000000
                   Position.Y = 23.000000000000000000
                   Enabled = False
-                  Size.Width = 630.000000000000000000
+                  Size.Width = 608.000000000000000000
                   Size.Height = 32.000000000000000000
                   Size.PlatformDefault = False
                   StyledSettings = [Family, Style, FontColor]
@@ -93,40 +65,35 @@ inherited frm_enterprise: Tfrm_enterprise
             end
             object lyt_field_1: TLayout
               Align = Top
-              Position.Y = 55.000000000000000000
-              Size.Width = 630.000000000000000000
-              Size.Height = 55.000000000000000000
+              Margins.Top = 2.000000000000000000
+              Position.Y = 57.000000000000000000
+              Size.Width = 608.000000000000000000
+              Size.Height = 75.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 1
               object lbl_param_address: TLabel
                 Align = Client
-                Size.Width = 630.000000000000000000
-                Size.Height = 55.000000000000000000
+                Size.Width = 608.000000000000000000
+                Size.Height = 75.000000000000000000
                 Size.PlatformDefault = False
                 TextSettings.VertAlign = Leading
                 Text = 'Endere'#231'o'
                 TabOrder = 0
-                object edt_param_address: TEdit
-                  Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Bottom
-                  TabOrder = 0
-                  TextSettings.Font.Size = 10.000000000000000000
-                  Position.Y = 23.000000000000000000
-                  Enabled = False
-                  Size.Width = 630.000000000000000000
-                  Size.Height = 32.000000000000000000
-                  Size.PlatformDefault = False
+                object mem_address: TMemo
+                  Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                  DataDetectorTypes = []
                   StyledSettings = [Family, Style, FontColor]
-                  CharCase = ecUpperCase
-                  object btn_map: TSpeedButton
-                    Align = Right
-                    Images = imglist_1
-                    ImageIndex = 0
-                    Position.X = 595.000000000000000000
-                    Size.Width = 35.000000000000000000
-                    Size.Height = 32.000000000000000000
-                    Size.PlatformDefault = False
-                  end
+                  TextSettings.Font.Size = 11.000000000000000000
+                  TextSettings.WordWrap = True
+                  Align = Bottom
+                  Enabled = False
+                  Position.Y = 24.000000000000000000
+                  Size.Width = 608.000000000000000000
+                  Size.Height = 51.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  Viewport.Width = 608.000000000000000000
+                  Viewport.Height = 51.000000000000000000
                 end
               end
             end
@@ -145,24 +112,24 @@ inherited frm_enterprise: Tfrm_enterprise
             PNG = {
               89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
               61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-              020D49444154384F63A004BC3DE765C5086533B86C8A95FBF7EFBF159069F5F7
+              020F49444154384F63A004BC3DE765C5086533B86C8A95FBF7EFBF159069F5F7
               E337B67F3FFE7CF8F79FF128C76FC6637B7337BC052BFACFC0E8B821C6929981
-              21B847EAA38614CB1F73C6A04DD1ABA64BBED77EFA8FF95DD9637EEBFF2C0C8C
-              BFDF7D39F4FFF77F3BB0A63F0CFFFF3330DC64E462D9C6C4CB19C1CAC020D926
-              F5F18802FB1FAD86DB25EF983EFE630CAD7CC5C321C7F857BD4BF6E35146A006
-              B04618001AC8C8C2A0C1F8FFAF09BAE67B3FE45599406A1EFE66532A7BC1FF49
-              96F5A706C8106646265443C080E97F279A66B028580E081EFE6356AE7A26F441
-              86E58F66A5F8B7CFC82E01B16B24BE7D9645D30C02700340E0DE1F1695EAE7FC
-              EF6518FF7155497D077B0784416C1946662E74CD20C0E8BC2106C3B98ADF3FEF
-              C8E5F966FAFC0FE375105F92854173FAABA4D30F984D3CC00A90008A0B60E0D6
-              7746AEDE571C6FE5587F9B81344F7816FDEEF60F392EA8340AC06A0028C04204
-              7FBDF8FD9FF53348F3A35F7228CE4606180680FC5C22F2F38B3CEB7F6D429A41
-              00C50090E6566054A9B2FF6327463308C00D006906251245F67FDA539F47FF27
-              463308800D40D6DC74B7F0CDF5AF4AEC60591CE0DF7F8637C0F4DDCFF0F79F36
-              0B4CB30AFB5FB1698F13E6DDF9A6709BE1DFDBCB4005EAC0F8D565FAFF5F97E1
-              DF5F5D4636B67FC0DCB41B2836879FFBE786D5613ABFC0A6256C8D70FD70C95B
-              10CCC103E2EBF773409948808101004F1AFD91489BCCA50000000049454E44AE
-              426082}
+              21B847EAA38614CB1F73C6A04DD1ABA64BBED77EFA8FF95DD97D7EEBFF1C0C8C
+              BFDF7D39F4FFF77F3BB0A61F0CFFFFB330DC64E462D9C6C4C319C1FA9741B24D
+              EEE31105F63F5A0DB74BDE317DFCC7185AF98A8743EEFF5FF52EC58F4719811A
+              C01A61006820230B8306E3FFBF26E89AEFFD90576502A979F89B4DA9EC15FF27
+              59D69F1A2043981999500D0103A6FF9D689AC1A260392078F88F59B9EA99D007
+              19963F9A95E2DF3E23BB04C4AE91F8F659164D3308C00D00817B7F5854AA9FF3
+              BF9761FCC75525F71DEC1D1006B1651899B9D0358300A3F386180CE72A7EFFBC
+              2387E79BE98B3F8CD7417C091606CD19AF924E3F6036F1002B4002282E80815B
+              DF19B9FA5E71BC9563FD6906D23CF159F4BBDB3FE4B8A0D22800AB01A0000B11
+              FCF5E2D77FF6CF20CD8F7EC9A1381B19601800F27389C8CF2F72ACFFB5096906
+              011403409A5B8151A5CAFE8F9D18CD20003700A4199248FE694F7D1EFD9F18CD
+              20003600A6591EA8B9F96EE19BEB5F95D8C1B238C0BFFF0C6FFEFF67E867F8FB
+              4F9B05A65985FDAFD8B4C709F3EE7C53B8CDF0EFED65A0027560FCEA32FDFFAF
+              CBF0EFB72E231BDB3F606EDA0D149BC3CFFD73C3EA309D5F60D312B646B87EB8
+              E42D08E6E001F1F5FB39A04C24C0C0000018DF009F5D1EC7A20000000049454E
+              44AE426082}
             FileName = 'C:\development\ccsolutions\images\icons\map.png'
           end>
         Name = 'Item 0'
@@ -199,18 +166,18 @@ inherited frm_enterprise: Tfrm_enterprise
       FillHeaderExpressions = <>
       FillBreakGroups = <>
     end
-    object LinkControlToField2: TLinkControlToField
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDB1
-      FieldName = 'param_end_add_bus'
-      Control = edt_param_address
-      Track = False
-    end
     object LinkControlToField1: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'ent_nickname'
       Control = edt_nickname
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'param_end_add_bus'
+      Control = mem_address
       Track = False
     end
   end

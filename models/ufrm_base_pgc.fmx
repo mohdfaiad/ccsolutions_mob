@@ -23,6 +23,7 @@ object frm_base_pgc: Tfrm_base_pgc
       Size.Height = 480.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'tabcontrolstyle'
+      TabHeight = 49.000000000000000000
       TabIndex = 0
       TabOrder = 0
       TabPosition = None
@@ -44,59 +45,20 @@ object frm_base_pgc: Tfrm_base_pgc
         Text = 'tbitm_record'
         ExplicitSize.cx = 8.000000000000000000
         ExplicitSize.cy = 8.000000000000000000
-        object toolbar_record_top: TToolBar
-          Size.Width = 640.000000000000000000
-          Size.Height = 55.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 0
-          object shw_record_top: TShadowEffect
-            Distance = 3.000000000000000000
-            Direction = 45.000000000000000000
-            Softness = 0.300000011920929000
-            Opacity = 0.600000023841857900
-            ShadowColor = claBlack
-          end
-          object lbl_record: TLabel
-            Align = Contents
-            Size.Width = 640.000000000000000000
-            Size.Height = 55.000000000000000000
-            Size.PlatformDefault = False
-            TextSettings.HorzAlign = Center
-            Text = 'lbl_record'
-            TabOrder = 0
-          end
-          object btn_close_record: TButton
-            Align = Left
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 5.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Margins.Bottom = 5.000000000000000000
-            Position.X = 5.000000000000000000
-            Position.Y = 5.000000000000000000
-            Size.Width = 60.000000000000000000
-            Size.Height = 45.000000000000000000
-            Size.PlatformDefault = False
-            StyleLookup = 'priortoolbutton'
-            TabOrder = 1
-            Text = 'btn_close_record'
-            OnClick = btn_close_recordClick
-          end
-        end
         object rec_record: TRectangle
           Align = Client
           Fill.Color = claWhite
           Size.Width = 640.000000000000000000
-          Size.Height = 425.000000000000000000
+          Size.Height = 430.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object lyt_record: TLayout
             Align = Client
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 5.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Margins.Bottom = 5.000000000000000000
-            Size.Width = 630.000000000000000000
-            Size.Height = 415.000000000000000000
+            Margins.Left = 16.000000000000000000
+            Margins.Top = 16.000000000000000000
+            Margins.Right = 16.000000000000000000
+            Size.Width = 608.000000000000000000
+            Size.Height = 414.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
             object lsv_record: TListView
@@ -106,8 +68,8 @@ object frm_base_pgc: Tfrm_base_pgc
               FooterAppearanceClassName = 'TListHeaderObjects'
               Align = Client
               Margins.Top = 5.000000000000000000
-              Size.Width = 630.000000000000000000
-              Size.Height = 388.000000000000000000
+              Size.Width = 608.000000000000000000
+              Size.Height = 377.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 0
               StyleLookup = 'listviewstyle'
@@ -117,18 +79,57 @@ object frm_base_pgc: Tfrm_base_pgc
               Touch.InteractiveGestures = [LongTap, DoubleTap]
               Align = Top
               TabOrder = 1
-              Size.Width = 630.000000000000000000
-              Size.Height = 22.000000000000000000
+              Size.Width = 608.000000000000000000
+              Size.Height = 32.000000000000000000
               Size.PlatformDefault = False
               object btnedt_search: TSearchEditButton
                 CanFocus = False
                 Cursor = crArrow
-                Size.Width = 28.000000000000000000
-                Size.Height = 18.000000000000000000
+                Size.Width = 32.000000000000000000
+                Size.Height = 28.000000000000000000
                 Size.PlatformDefault = False
                 TabOrder = 0
               end
             end
+          end
+        end
+        object rct_record_top: TRectangle
+          Align = Top
+          Fill.Color = xFF2977DA
+          Size.Width = 640.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object lbl_record: TLabel
+            Align = Contents
+            StyledSettings = [Family, Size, Style]
+            Size.Width = 640.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'lbl_record'
+            TabOrder = 1
+          end
+          object btn_close_record: TButton
+            Align = Left
+            StyledSettings = [Family, Size, Style]
+            Size.Width = 80.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbuttonbordered'
+            TabOrder = 0
+            Text = 'btn_close_record'
+            TextSettings.FontColor = claWhite
+            OnClick = btn_close_recordClick
+          end
+          object shw_record_top: TShadowEffect
+            Distance = 3.000000000000000000
+            Direction = 45.000000000000000000
+            Softness = 0.300000011920929000
+            Opacity = 0.500000000000000000
+            ShadowColor = claBlack
+            Enabled = False
           end
         end
       end
@@ -145,73 +146,63 @@ object frm_base_pgc: Tfrm_base_pgc
         Text = 'tbitm_data'
         ExplicitSize.cx = 8.000000000000000000
         ExplicitSize.cy = 8.000000000000000000
-        object tlb_data_botton: TToolBar
-          Align = Bottom
-          Position.Y = 425.000000000000000000
+        object rec_data: TRectangle
+          Align = Client
+          Fill.Color = claWhite
           Size.Width = 640.000000000000000000
-          Size.Height = 55.000000000000000000
+          Size.Height = 430.000000000000000000
           Size.PlatformDefault = False
-          StyleLookup = 'toolbarstyle'
-          TabOrder = 0
+          Stroke.Kind = None
+          object vsb_data: TVertScrollBox
+            Align = Client
+            Margins.Left = 16.000000000000000000
+            Margins.Top = 16.000000000000000000
+            Margins.Right = 16.000000000000000000
+            Margins.Bottom = 16.000000000000000000
+            Size.Width = 608.000000000000000000
+            Size.Height = 398.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'scrollboxstyle'
+            TabOrder = 0
+            Viewport.Width = 608.000000000000000000
+            Viewport.Height = 398.000000000000000000
+          end
         end
-        object toolbar_data_top: TToolBar
+        object rct_data_top: TRectangle
+          Align = Top
+          Fill.Color = xFF2977DA
           Size.Width = 640.000000000000000000
-          Size.Height = 55.000000000000000000
+          Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 1
+          Stroke.Kind = None
+          object lbl_data_top: TLabel
+            Align = Contents
+            StyledSettings = [Family, Size, Style]
+            Size.Width = 640.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'lbl_data_top'
+            TabOrder = 1
+          end
+          object btn_close_data: TButton
+            Align = Left
+            Size.Width = 80.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbutton'
+            TabOrder = 0
+            Text = 'btn_close'
+            OnClick = btn_close_dataClick
+          end
           object shw_data_top: TShadowEffect
             Distance = 3.000000000000000000
             Direction = 45.000000000000000000
             Softness = 0.300000011920929000
             Opacity = 0.600000023841857900
             ShadowColor = claBlack
-          end
-          object lbl_data_top: TLabel
-            Align = Contents
-            Size.Width = 640.000000000000000000
-            Size.Height = 55.000000000000000000
-            Size.PlatformDefault = False
-            TextSettings.HorzAlign = Center
-            Text = 'lbl_data_top'
-            TabOrder = 0
-          end
-          object btn_close_data: TButton
-            Align = Left
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 5.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Margins.Bottom = 5.000000000000000000
-            Position.X = 5.000000000000000000
-            Position.Y = 5.000000000000000000
-            Size.Width = 60.000000000000000000
-            Size.Height = 45.000000000000000000
-            Size.PlatformDefault = False
-            StyleLookup = 'priortoolbutton'
-            TabOrder = 1
-            Text = 'btn_close'
-            OnClick = btn_close_dataClick
-          end
-        end
-        object rec_data: TRectangle
-          Align = Client
-          Fill.Color = claWhite
-          Size.Width = 640.000000000000000000
-          Size.Height = 370.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object vsb_data: TVertScrollBox
-            Align = Client
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 5.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Margins.Bottom = 5.000000000000000000
-            Size.Width = 630.000000000000000000
-            Size.Height = 360.000000000000000000
-            Size.PlatformDefault = False
-            StyleLookup = 'scrollboxstyle'
-            TabOrder = 0
-            Viewport.Width = 630.000000000000000000
-            Viewport.Height = 360.000000000000000000
+            Enabled = False
           end
         end
       end

@@ -11,18 +11,13 @@ type
   Tfrm_main_base = class(TForm)
     mtv_menu: TMultiView;
     rct_menu: TRectangle;
-    actlistMenu: TActionList;
-    imglistMenu: TImageList;
-    lsbox_menu: TListBox;
+    actlist_menu: TActionList;
+    imglist_menu: TImageList;
     rct_menu_botton: TRectangle;
     lyt_main: TLayout;
-    toolbar_top: TToolBar;
-    toolbar_botton: TToolBar;
     btn_menu: TButton;
-    lbi_profile: TListBoxItem;
     rct_profile: TRectangle;
     lyt_center: TLayout;
-    gly_center: TGlyph;
     line_profile: TLine;
     crc_photograph: TCircle;
     lyt_profile: TLayout;
@@ -33,6 +28,10 @@ type
     line_menu_botton: TLine;
     rct_login: TRectangle;
     lbl_login: TLabel;
+    rct_main_top: TRectangle;
+    rct_main_button: TRectangle;
+    rct_main_center: TRectangle;
+    vsb_menu: TVertScrollBox;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }

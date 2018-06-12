@@ -15,7 +15,6 @@ type
     tbitm_data: TTabItem;
     lyt_form: TLayout;
     lbl_record: TLabel;
-    tlb_data_botton: TToolBar;
     btn_close_data: TButton;
     lbl_data_top: TLabel;
     vsb_data: TVertScrollBox;
@@ -30,10 +29,10 @@ type
     imglist_1: TImageList;
     ChangeTabAction_data: TChangeTabAction;
     ChangeTabAction_record: TChangeTabAction;
-    toolbar_record_top: TToolBar;
-    toolbar_data_top: TToolBar;
     rec_record: TRectangle;
     rec_data: TRectangle;
+    rct_record_top: TRectangle;
+    rct_data_top: TRectangle;
     procedure FormCreate(Sender: TObject);
     procedure btn_close_dataClick(Sender: TObject);
     procedure btn_close_recordClick(Sender: TObject);
