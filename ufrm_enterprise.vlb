@@ -1,33 +1,33 @@
 ﻿[tbitm_record]
-Coordinates=322,432,86,36
+Coordinates=322,432,77,33
 Visible=False
 
 [tbctrl_1]
-Coordinates=10,432,57,36
+Coordinates=10,432,51,33
 Visible=False
 
 [lyt_form]
-Coordinates=700,364,60,36
+Coordinates=700,364,54,33
 Visible=False
 
 [tbitm_data]
-Coordinates=615,364,75,36
+Coordinates=615,364,66,33
 Visible=False
 
 [frm_dm_rest.rest_request]
-Coordinates=309,10,162,36
+Coordinates=309,10,141,33
 Visible=False
 
 [frm_dm_rest.mem_rest]
-Coordinates=144,364,147,36
+Coordinates=144,364,128,33
 Visible=False
 
 [frm_dm_rest.rest_client]
-Coordinates=481,10,149,36
+Coordinates=481,10,131,33
 Visible=False
 
 [frm_dm_rest.rest_response]
-Coordinates=10,10,172,36
+Coordinates=10,10,150,33
 Visible=False
 
 []
@@ -40,81 +40,122 @@ ActiveLayerNames=
 EditingLayerName=
 
 [BindSourceDB1]
-Coordinates=240,20,152,746
+Coordinates=240,20,127,645
 
 [BindingsList1]
-Coordinates=88,280,91,36
+Coordinates=88,280,82,33
 
 [frm_dm.mem_enterprise]
-Coordinates=180,30,154,36
+Coordinates=180,30,134,33
 Visible=False
 
 [frm_dm.mem_insurance]
-Coordinates=291,640,153,36
+Coordinates=291,640,133,33
 Visible=False
 
 [frm_dm.mem_product]
-Coordinates=21,484,140,36
+Coordinates=21,484,123,33
 Visible=False
 
 [ChangeTabAction_record]
-Coordinates=488,416,161,36
+Coordinates=488,416,140,33
 
 [actlist_1]
-Coordinates=355,116,62,36
+Coordinates=355,116,55,33
 
 [imglist_1]
-Coordinates=355,168,66,36
+Coordinates=355,168,58,33
 
 [ChangeTabAction_data]
-Coordinates=355,220,149,36
+Coordinates=355,220,129,33
 
 [lsv_record]
-Coordinates=50,20,107,278
+Coordinates=50,20,89,231
 Visible=True
 
 [edt_search]
-Coordinates=355,272,78,36
+Coordinates=355,272,68,33
 Visible=False
 
 [vsb_data]
-Coordinates=16,314,67,36
+Coordinates=16,314,58,33
 Visible=False
 
 [btnedt_search]
-Coordinates=522,150,96,36
+Coordinates=522,150,84,33
 Visible=False
 
 [rec_record]
-Coordinates=522,202,76,36
+Coordinates=522,202,67,33
 Visible=False
 
 [lyt_record]
-Coordinates=522,254,71,36
+Coordinates=522,254,64,33
 Visible=False
 
 [rec_data]
-Coordinates=522,520,65,36
+Coordinates=522,520,56,33
 Visible=False
 
 [edt_nickname]
-Coordinates=460,30,94,58
+Coordinates=460,30,83,51
 
 [lbl_nickname]
-Coordinates=522,782,90,36
+Coordinates=522,782,79,33
 Visible=False
 
 [lbl_param_address]
-Coordinates=522,642,124,36
+Coordinates=522,642,108,33
 Visible=False
-
-[lyt_field_1]
-Coordinates=522,852,73,36
-Visible=False
-
-[lyt_field_2]
-Coordinates=522,904,73,36
 
 [mem_address]
-Coordinates=460,100,95,58
+Coordinates=460,100,83,51
+
+[btn_close_record]
+Coordinates=430,349,100,33
+Visible=False
+
+[btn_close_data]
+Coordinates=136,317,89,33
+Visible=False
+
+[lbl_data_top]
+Coordinates=47,317,74,33
+Visible=False
+
+[shw_data_top]
+Coordinates=430,471,83,33
+
+[shw_record_top]
+Coordinates=430,575,93,33
+
+[lbl_record]
+Coordinates=430,1,64,33
+Visible=False
+
+[rct_data_top]
+Coordinates=430,177,76,33
+Visible=False
+
+[rct_record_top]
+Coordinates=430,719,87,33
+Visible=False
+
+[lyt_address]
+Coordinates=522,852,71,33
+Visible=False
+
+[lyt_name]
+Coordinates=522,904,58,33
+
+[lbl_address]
+Coordinates=405,523,71,33
+Visible=False
+
+[edt_phone]
+Coordinates=460,160,66,51
+
+[lyt_phone]
+Coordinates=222,685,62,33
+Visible=False
 

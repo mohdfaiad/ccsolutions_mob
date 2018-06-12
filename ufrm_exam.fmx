@@ -19,6 +19,127 @@ inherited frm_exam: Tfrm_exam
           inherited vsb_data: TVertScrollBox
             Viewport.Width = 608.000000000000000000
             Viewport.Height = 398.000000000000000000
+            object lyt_name: TLayout
+              Align = Top
+              Size.Width = 608.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object lbl_name: TLabel
+                Align = Client
+                Size.Width = 608.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.VertAlign = Leading
+                Text = 'Nome'
+                TabOrder = 0
+                object edt_name: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  TabOrder = 0
+                  TextSettings.Font.Size = 11.000000000000000000
+                  Enabled = False
+                  Margins.Top = 20.000000000000000000
+                  Size.Width = 608.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  StyledSettings = [Family, Style, FontColor]
+                end
+              end
+            end
+            object lyt_initials: TLayout
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 55.000000000000000000
+              Size.Width = 608.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object lbl_initials: TLabel
+                Align = Client
+                Size.Width = 608.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.VertAlign = Leading
+                Text = 'Siglas'
+                TabOrder = 0
+                object edt_initials: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  TabOrder = 0
+                  TextSettings.Font.Size = 11.000000000000000000
+                  Enabled = False
+                  Margins.Top = 20.000000000000000000
+                  Size.Width = 608.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  StyledSettings = [Family, Style, FontColor]
+                end
+              end
+            end
+            object lyt_gender: TLayout
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 110.000000000000000000
+              Size.Width = 608.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object lbl_gender: TLabel
+                Align = Client
+                Size.Width = 608.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.VertAlign = Leading
+                Text = 'Sexo'
+                TabOrder = 0
+                object edt_gender: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  TabOrder = 0
+                  TextSettings.Font.Size = 11.000000000000000000
+                  Enabled = False
+                  Margins.Top = 20.000000000000000000
+                  Size.Width = 608.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  StyledSettings = [Family, Style, FontColor]
+                end
+              end
+            end
+            object lyt_description: TLayout
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 165.000000000000000000
+              Size.Width = 608.000000000000000000
+              Size.Height = 197.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              object lbl_description: TLabel
+                Align = Client
+                Size.Width = 608.000000000000000000
+                Size.Height = 197.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.VertAlign = Leading
+                Text = 'Descri'#231#227'o'
+                TabOrder = 0
+                object mem_description: TMemo
+                  Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                  DataDetectorTypes = []
+                  StyledSettings = [Family, Style, FontColor]
+                  TextSettings.Font.Size = 11.000000000000000000
+                  Align = Client
+                  Enabled = False
+                  Margins.Top = 20.000000000000000000
+                  Size.Width = 608.000000000000000000
+                  Size.Height = 177.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  Viewport.Width = 604.000000000000000000
+                  Viewport.Height = 173.000000000000000000
+                end
+              end
+            end
           end
         end
       end
@@ -40,9 +161,45 @@ inherited frm_exam: Tfrm_exam
       DataSource = BindSourceDB1
       FieldName = 'pro_name'
       Control = lsv_record
-      FillExpressions = <>
+      FillExpressions = <
+        item
+          SourceMemberName = 'pro_initials'
+          ControlMemberName = 'Detail1'
+        end
+        item
+          SourceMemberName = 'pro_gender'
+          ControlMemberName = 'Detail2'
+        end>
       FillHeaderExpressions = <>
       FillBreakGroups = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'pro_name'
+      Control = edt_name
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'pro_gender'
+      Control = edt_gender
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'pro_description'
+      Control = mem_description
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'pro_initials'
+      Control = edt_initials
+      Track = False
     end
   end
 end

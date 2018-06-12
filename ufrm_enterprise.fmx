@@ -3,14 +3,12 @@ inherited frm_enterprise: Tfrm_enterprise
   DesignerMasterStyle = 0
   inherited lyt_form: TLayout
     inherited tbctrl_1: TTabControl
-      TabIndex = 0
       Sizes = (
         640s
         480s
         640s
         480s)
       inherited tbitm_record: TTabItem
-        IsSelected = True
         ExplicitSize.cx = 8.000000000000000000
         ExplicitSize.cy = 8.000000000000000000
         inherited rec_record: TRectangle
@@ -27,14 +25,13 @@ inherited frm_enterprise: Tfrm_enterprise
         end
       end
       inherited tbitm_data: TTabItem
-        IsSelected = False
         ExplicitSize.cx = 8.000000000000000000
         ExplicitSize.cy = 8.000000000000000000
         inherited rec_data: TRectangle
           inherited vsb_data: TVertScrollBox
             Viewport.Width = 608.000000000000000000
             Viewport.Height = 398.000000000000000000
-            object lyt_field_2: TLayout
+            object lyt_name: TLayout
               Align = Top
               Size.Width = 608.000000000000000000
               Size.Height = 55.000000000000000000
@@ -50,20 +47,20 @@ inherited frm_enterprise: Tfrm_enterprise
                 TabOrder = 0
                 object edt_nickname: TEdit
                   Touch.InteractiveGestures = [LongTap, DoubleTap]
-                  Align = Bottom
+                  Align = Client
                   TabOrder = 0
                   TextSettings.Font.Size = 11.000000000000000000
-                  Position.Y = 23.000000000000000000
                   Enabled = False
+                  Margins.Top = 20.000000000000000000
                   Size.Width = 608.000000000000000000
-                  Size.Height = 32.000000000000000000
+                  Size.Height = 35.000000000000000000
                   Size.PlatformDefault = False
                   StyledSettings = [Family, Style, FontColor]
                   CharCase = ecUpperCase
                 end
               end
             end
-            object lyt_field_1: TLayout
+            object lyt_address: TLayout
               Align = Top
               Margins.Top = 2.000000000000000000
               Position.Y = 57.000000000000000000
@@ -85,15 +82,45 @@ inherited frm_enterprise: Tfrm_enterprise
                   StyledSettings = [Family, Style, FontColor]
                   TextSettings.Font.Size = 11.000000000000000000
                   TextSettings.WordWrap = True
-                  Align = Bottom
+                  Align = Client
                   Enabled = False
-                  Position.Y = 24.000000000000000000
+                  Margins.Top = 20.000000000000000000
                   Size.Width = 608.000000000000000000
-                  Size.Height = 51.000000000000000000
+                  Size.Height = 55.000000000000000000
                   Size.PlatformDefault = False
                   TabOrder = 0
                   Viewport.Width = 608.000000000000000000
-                  Viewport.Height = 51.000000000000000000
+                  Viewport.Height = 55.000000000000000000
+                end
+              end
+            end
+            object lyt_phone: TLayout
+              Align = Top
+              Margins.Top = 2.000000000000000000
+              Position.Y = 134.000000000000000000
+              Size.Width = 608.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object lbl_address: TLabel
+                Align = Client
+                Size.Width = 608.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.VertAlign = Leading
+                Text = 'Telefone'
+                TabOrder = 0
+                object edt_phone: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  TabOrder = 0
+                  TextSettings.Font.Size = 11.000000000000000000
+                  Enabled = False
+                  Margins.Top = 20.000000000000000000
+                  Size.Width = 608.000000000000000000
+                  Size.Height = 30.000000000000000000
+                  Size.PlatformDefault = False
+                  StyledSettings = [Family, Style, FontColor]
                 end
               end
             end
@@ -114,13 +141,13 @@ inherited frm_enterprise: Tfrm_enterprise
               61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
               020F49444154384F63A004BC3DE765C5086533B86C8A95FBF7EFBF159069F5F7
               E337B67F3FFE7CF8F79FF128C76FC6637B7337BC052BFACFC0E8B821C6929981
-              21B847EAA38614CB1F73C6A04DD1ABA64BBED77EFA8FF95DD97D7EEBFF1C0C8C
-              BFDF7D39F4FFF77F3BB0A61F0CFFFFB330DC64E462D9C6C4C319C1FA9741B24D
-              EEE31105F63F5A0DB74BDE317DFCC7185AF98A8743EEFF5FF52EC58F4719811A
+              21B847EAA38614CB1F73C6A04DD1ABA64BBED77EFA8FF95DD91D7EEBFFDC0C8C
+              BFDF7D39F4FFF77F3BB0A6AF0CFFFFB333DC64E462D9C6C4C319C1FA8B41B24D
+              F1E31105F63F5A0DB74BDE317DFCC7185AF98A8743EEFF5FF52E958F4719811A
               C01A61006820230B8306E3FFBF26E89AEFFD90576502A979F89B4DA9EC15FF27
               59D69F1A2043981999500D0103A6FF9D689AC1A260392078F88F59B9EA99D007
               19963F9A95E2DF3E23BB04C4AE91F8F659164D3308C00D00817B7F5854AA9FF3
-              BF9761FCC75525F71DEC1D1006B1651899B9D0358300A3F386180CE72A7EFFBC
+              BF9761FCC755A5F81DEC1D1006B1651899B9D0358300A3F386180CE72A7EFFBC
               2387E79BE98B3F8CD7417C091606CD19AF924E3F6036F1002B4002282E80815B
               DF19B9FA5E71BC9563FD6906D23CF159F4BBDB3FE4B8A0D22800AB01A0000B11
               FCF5E2D77FF6CF20CD8F7EC9A1381B19601800F27389C8CF2F72ACFFB5096906
@@ -128,7 +155,7 @@ inherited frm_enterprise: Tfrm_enterprise
               20003600A6591EA8B9F96EE19BEB5F95D8C1B238C0BFFF0C6FFEFF67E867F8FB
               4F9B05A65985FDAFD8B4C709F3EE7C53B8CDF0EFED65A0027560FCEA32FDFFAF
               CBF0EFB72E231BDB3F606EDA0D149BC3CFFD73C3EA309D5F60D312B646B87EB8
-              E42D08E6E001F1F5FB39A04C24C0C0000018DF009F5D1EC7A20000000049454E
+              E42D08E6E001F1F5FB39A04C24C0C000001F36009F9B8DCCCA0000000049454E
               44AE426082}
             FileName = 'C:\development\ccsolutions\images\icons\map.png'
           end>
@@ -162,6 +189,10 @@ inherited frm_enterprise: Tfrm_enterprise
         item
           SourceMemberName = 'param_end_add_bus'
           ControlMemberName = 'Detail1'
+        end
+        item
+          SourceMemberName = 'ent_phone1'
+          ControlMemberName = 'Detail2'
         end>
       FillHeaderExpressions = <>
       FillBreakGroups = <>
@@ -178,6 +209,13 @@ inherited frm_enterprise: Tfrm_enterprise
       DataSource = BindSourceDB1
       FieldName = 'param_end_add_bus'
       Control = mem_address
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'ent_phone1'
+      Control = edt_phone
       Track = False
     end
   end

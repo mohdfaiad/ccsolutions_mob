@@ -167,7 +167,7 @@ try
 
           while not(mem_rest.Eof) do begin
             frm_dm.mem_insurance.Append;
-            frm_dm.mem_insurance.FieldByName('ins_nickname').AsString := mem_rest.FieldByName('ent_nickname').AsString;
+            frm_dm.mem_insurance.FieldByName('ins_nickname').AsString := mem_rest.FieldByName('ins_nickname').AsString;
 
             frm_dm.mem_insurance.Post;
             mem_rest.Next;

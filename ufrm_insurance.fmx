@@ -38,7 +38,7 @@ inherited frm_insurance: Tfrm_insurance
     object LinkListControlToField1: TLinkListControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
-      FieldName = 'ins_first_name'
+      FieldName = 'ins_nickname'
       Control = lsv_record
       FillExpressions = <>
       FillHeaderExpressions = <>

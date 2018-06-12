@@ -14,14 +14,18 @@ type
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkListControlToField1: TLinkListControlToField;
-    lyt_field_1: TLayout;
-    lyt_field_2: TLayout;
+    lyt_address: TLayout;
+    lyt_name: TLayout;
     lbl_param_address: TLabel;
     lbl_nickname: TLabel;
     edt_nickname: TEdit;
     LinkControlToField1: TLinkControlToField;
     mem_address: TMemo;
     LinkControlToField2: TLinkControlToField;
+    lyt_phone: TLayout;
+    lbl_address: TLabel;
+    edt_phone: TEdit;
+    LinkControlToField3: TLinkControlToField;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -44,6 +48,24 @@ begin
   Trest_config.v_root_element := 'enterprise';
 
   frm_dm_rest.get_enterprise_mobile;
+
+  {$IFDEF WIN32}
+    edt_nickname.Margins.Top := 25;
+    mem_address.Margins.Top := 25;
+    edt_phone.Margins.Top := 25;
+  {$ENDIF}
+
+  {$IFDEF WIN64}
+    edt_nickname.Margins.Top := 25;
+    mem_address.Margins.Top := 25;
+    edt_phone.Margins.Top := 25;
+  {$ENDIF}
+
+  {$IFDEF MACOS}
+    edt_nickname.Margins.Top := 25;
+    mem_address.Margins.Top := 25;
+    edt_phone.Margins.Top := 25;
+  {$ENDIF}
 end;
 
 end.

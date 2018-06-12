@@ -125,3 +125,11 @@ Coordinates=474,565,55,33
 Coordinates=448,98,100,33
 Visible=False
 
+[rct_record_top]
+Coordinates=353,308,87,33
+Visible=False
+
+[rct_data_top]
+Coordinates=589,80,76,33
+Visible=False
+

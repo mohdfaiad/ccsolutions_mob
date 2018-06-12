@@ -16,6 +16,7 @@ type
     LinkListControlToField1: TLinkListControlToField;
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure lsv_recordItemClick(const Sender: TObject; const AItem: TListViewItem);
   private
     { Private declarations }
   public
@@ -43,6 +44,12 @@ begin
   Trest_config.v_root_element := 'insurance';
 
   frm_dm_rest.get_insurance_mobile;
+end;
+
+procedure Tfrm_insurance.lsv_recordItemClick(const Sender: TObject; const AItem: TListViewItem);
+begin
+//  inherited;
+
 end;
 
 end.

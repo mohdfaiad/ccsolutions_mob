@@ -9,10 +9,6 @@ uses
 
 type
   Tfrm_main_base_support = class(Tfrm_main_base)
-    lbi_tick_open: TListBoxItem;
-    lbgh_support: TListBoxGroupHeader;
-    lbgh_settings: TListBoxGroupHeader;
-    lbi_Parâmetros: TListBoxItem;
   private
     { Private declarations }
   public
