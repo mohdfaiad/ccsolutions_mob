@@ -13,7 +13,8 @@ type
   public
     const
       contract_ctr_cod = frm_mobilelab.Fcontract_ctr_cod;
-      address_wbs = '192.168.88.151';
+      address_wbs = '5c860580b8ac.sn.mynetname.net:8888';
+      contact = 'http://www.cdl.med.br/livezilla/chat.php';
   published
 
   end;

@@ -1,37 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2018/05/23 12:52:21.000.592,=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/05/23 12:54:12.000.030,=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/06/09 15:06:55.000.518,=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/06/12 07:00:34.000.573,=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2018/06/12 07:01:00.000.370,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\ufrm_mobilelab.fmx=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2018/06/12 07:01:00.000.370,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\ufrm_mobilelab.pas=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2018/06/12 07:01:11.000.635,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\mobilelab.dproj=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2018/06/12 07:01:43.000.698,=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_base_pgc.pas</Transaction>
-    <Transaction>2018/06/12 07:01:44.000.588,=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_login_base.pas</Transaction>
-    <Transaction>2018/06/12 07:01:44.000.057,=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_base_smp.pas</Transaction>
-    <Transaction>2018/06/12 07:01:45.000.214,=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_main_base.pas</Transaction>
-    <Transaction>2018/06/12 07:01:46.000.495,=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_main_base_laboratory.pas</Transaction>
-    <Transaction>2018/06/12 07:01:55.000.010,=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_main_base_support.pas</Transaction>
-    <Transaction>2018/06/12 07:02:36.000.962,C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_main_base_support.pas=</Transaction>
-    <Transaction>2018/06/12 07:03:28.000.525,=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_cc.pas</Transaction>
-    <Transaction>2018/06/12 07:03:29.000.353,=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_cm.pas</Transaction>
-    <Transaction>2018/06/12 07:03:30.000.821,=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_dm.pas</Transaction>
-    <Transaction>2018/06/12 07:03:38.000.863,=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_dm_rest.pas</Transaction>
-    <Transaction>2018/06/12 07:03:40.000.676,=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_exam.pas</Transaction>
-    <Transaction>2018/06/12 07:03:40.000.020,=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_enterprise.pas</Transaction>
-    <Transaction>2018/06/12 07:03:41.000.316,=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_insurance.pas</Transaction>
-    <Transaction>2018/06/12 07:03:42.000.707,=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_login_lab.pas</Transaction>
-    <Transaction>2018/06/12 07:05:17.000.301,=C:\development\ccsolutions\ccsolutions_mob\trunk\mobilelab\ufrm_main.pas</Transaction>
-    <Transaction>2018/06/12 07:50:31.000.927,=C:\development\ccsolutions\ccsolutions_mob\trunk\class_rest_method.pas</Transaction>
-    <Transaction>2018/06/12 07:50:32.000.021,=C:\development\ccsolutions\ccsolutions_mob\trunk\class_rest_param_contract.pas</Transaction>
-    <Transaction>2018/06/12 08:09:59.000.370,=C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\ClientClassesUnit1.pas</Transaction>
-    <Transaction>2018/06/12 08:10:23.000.245,C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_cc.pas=</Transaction>
-    <Transaction>2018/06/12 08:10:30.000.385,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\ClientClassesUnit1.pas=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_cc.pas</Transaction>
+    <Transaction>2018/06/13 10:41:40.000.167,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_frame_progress.fmx</Transaction>
+    <Transaction>2018/06/21 19:28:58.671,C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_contact.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\Unit1.fmx</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile iOSSimulator="iPhone5" Android=""/>
+		<NoProfile iOSSimulator="iPhone5" Android="192.168.88.105:5555"/>
 		<Pmacbook-air iOSSimulator="iPhone5"/>
 	</ActiveMobileDevice>
 </BorlandProject>

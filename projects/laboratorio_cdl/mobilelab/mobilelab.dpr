@@ -19,7 +19,9 @@ uses
   ufrm_main in '..\..\..\mobilelab\ufrm_main.pas' {frm_main},
   class_rest_method in '..\..\..\class_rest_method.pas',
   class_rest_param_contract in '..\..\..\class_rest_param_contract.pas',
-  ufrm_cc in '..\..\..\ufrm_cc.pas';
+  ufrm_cc in '..\..\..\ufrm_cc.pas',
+  ufrm_frame_progress in '..\..\..\models\ufrm_frame_progress.pas' {frm_frame_progress: TFrame},
+  ufrm_contact in '..\..\..\ufrm_contact.pas' {frm_contact};
 
 {$R *.res}
 

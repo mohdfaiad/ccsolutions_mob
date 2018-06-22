@@ -1,0 +1,58 @@
+object frm_frame_progress: Tfrm_frame_progress
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object rct_progress: TRectangle
+    Align = Client
+    Fill.Color = claBlack
+    Opacity = 0.400000005960464500
+    Size.Width = 320.000000000000000000
+    Size.Height = 240.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object crc_1: TCircle
+    Align = Center
+    Fill.Kind = None
+    Margins.Left = 75.000000000000000000
+    Margins.Top = 75.000000000000000000
+    Margins.Right = 75.000000000000000000
+    Margins.Bottom = 75.000000000000000000
+    Size.Width = 90.000000000000000000
+    Size.Height = 90.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFF2977DA
+    object crc_center: TCircle
+      Align = Client
+      Fill.Kind = None
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF2977DA
+    end
+    object arc_progress: TArc
+      Align = Client
+      Fill.Color = xFF2977DA
+      Fill.Kind = Solid
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 86.000000000000000000
+      Size.Height = 84.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF2977DA
+      EndAngle = -90.000000000000000000
+      object floatanim_1: TFloatAnimation
+        Duration = 1.000000000000000000
+        Loop = True
+        PropertyName = 'RotationAngle'
+        StartValue = 0.000000000000000000
+        StopValue = 360.000000000000000000
+      end
+    end
+  end
+end

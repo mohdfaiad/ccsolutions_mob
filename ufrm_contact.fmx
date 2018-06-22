@@ -1,0 +1,45 @@
+inherited frm_contact: Tfrm_contact
+  Caption = 'Contato'
+  DesignerMasterStyle = 0
+  inherited lyt_form: TLayout
+    inherited tbctrl_1: TTabControl
+      Sizes = (
+        640s
+        480s
+        640s
+        480s)
+      inherited tbitm_record: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited rec_record: TRectangle
+          object webb_main: TWebBrowser
+            Align = Client
+            Size.Width = 640.000000000000000000
+            Size.Height = 430.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        inherited rct_record_top: TRectangle
+          inherited btn_close_record: TButton
+            OnClick = nil
+          end
+        end
+      end
+      inherited tbitm_data: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited rec_data: TRectangle
+          inherited vsb_data: TVertScrollBox
+            Viewport.Width = 608.000000000000000000
+            Viewport.Height = 398.000000000000000000
+          end
+        end
+        inherited rct_data_top: TRectangle
+          inherited btn_close_data: TButton
+            OnClick = nil
+          end
+        end
+      end
+    end
+  end
+end

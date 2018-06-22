@@ -6,7 +6,8 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, ufrm_main_base_laboratory, System.ImageList, FMX.ImgList,
   System.Actions, FMX.ActnList, FMX.ListBox, FMX.Objects, FMX.Layouts, FMX.MultiView, FMX.Controls.Presentation, ufrm_login_lab, ufrm_enterprise,
-  ufrm_exam, ufrm_insurance;
+  ufrm_exam, ufrm_insurance, ufrm_frame_progress, ufrm_contact, Androidapi.Jni.GraphicsContentViewText,Androidapi.Jni.Net,
+  Androidapi.Jni.JavaTypes, idUri, Androidapi.Jni,Androidapi.JNIBridge, Androidapi.Helpers, class_rest_method;
 
 type
   Tfrm_main = class(Tfrm_main_base_laboratory)
@@ -14,10 +15,14 @@ type
     procedure lbl_enterpriseClick(Sender: TObject);
     procedure lbl_insuranceClick(Sender: TObject);
     procedure lbl_examClick(Sender: TObject);
+    procedure lbl_contactClick(Sender: TObject);
+    procedure lbl_resultClick(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
+    procedure ShowActivity;
+    procedure HideActivity;
   end;
 
 var
@@ -26,6 +31,24 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure Tfrm_main.lbl_contactClick(Sender: TObject);
+var
+  openURL : JIntent;
+begin
+  inherited;
+  try
+    try
+      openURL := TJIntent.JavaClass.init(TJIntent.JavaClass.ACTION_VIEW);
+      //openURL.setPackage(StringToJString('com.google.android.youtube'));
+      openURL.setData(TJnet_Uri.JavaClass.parse(StringToJString(Trest_config.contact)));
+      SharedActivity.startActivity(openURL);
+    except on E: Exception do
+      ShowMessage('Error: ' + E.Message);
+    end;
+  finally
+  end;
+end;
 
 procedure Tfrm_main.lbl_enterpriseClick(Sender: TObject);
 begin
@@ -129,6 +152,36 @@ begin
   end else begin
     frm_login_lab.Show;
   end;
+end;
+
+procedure Tfrm_main.lbl_resultClick(Sender: TObject);
+var
+  openURL : JIntent;
+begin
+  inherited;
+try
+    try
+      openURL := TJIntent.JavaClass.init(TJIntent.JavaClass.ACTION_VIEW);
+      //openURL.setPackage(StringToJString('com.google.android.youtube'));
+      openURL.setData(TJnet_Uri.JavaClass.parse(StringToJString('http://cdlaboratorio.dyndns.org:8081/')));
+      SharedActivity.startActivity(openURL);
+    except on E: Exception do
+      ShowMessage('Error: ' + E.Message);
+    end;
+  finally
+  end;
+end;
+
+procedure Tfrm_main.ShowActivity;
+begin
+//  mtv_menu.Enabled := False;
+//  frm_frame_progress.ShowActivity;
+end;
+
+procedure Tfrm_main.HideActivity;
+begin
+//  frm_frame_progress.HideActivity;
+//  mtv_menu.Enabled := True;
 end;
 
 end.
