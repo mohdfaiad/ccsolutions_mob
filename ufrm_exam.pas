@@ -3,11 +3,50 @@ unit ufrm_exam;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
-  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, ufrm_base_pgc, FMX.ListView.Types, FMX.ListView.Appearances,
-  FMX.ListView.Adapters.Base, FMX.Layouts, FMX.ListView, FMX.Objects, FMX.Controls.Presentation, FMX.TabControl, MultiDetailAppearanceU, FMX.Edit,
-  class_rest_method, ufrm_dm_rest, ufrm_dm, System.Rtti, System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
-  Data.Bind.Components, Data.Bind.DBScope, System.Actions, FMX.ActnList, System.ImageList, FMX.ImgList, FMX.Effects, FMX.ScrollBox, FMX.Memo;
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants,
+  System.Rtti,
+  System.Bindings.Outputs,
+  System.Actions,
+  System.ImageList,
+
+  FMX.Types,
+  FMX.Graphics,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Dialogs,
+  FMX.StdCtrls,
+  FMX.ListView.Types,
+  FMX.ListView.Appearances,
+  FMX.ListView.Adapters.Base,
+  FMX.Layouts,
+  FMX.ListView,
+  FMX.Objects,
+  FMX.Controls.Presentation,
+  FMX.TabControl,
+  FMX.Edit,
+  FMX.Bind.DBEngExt,
+  FMX.Bind.Editors,
+  FMX.ImgList,
+  FMX.Effects,
+  FMX.ScrollBox,
+  FMX.Memo,
+  FMX.ActnList,
+
+  MultiDetailAppearanceU,
+
+  Data.Bind.EngExt,
+  Data.Bind.Components,
+  Data.Bind.DBScope,
+
+  class_rest_method,
+
+  ufrm_base_pgc,
+  ufrm_dm_rest,
+  ufrm_dm;
 
 type
   Tfrm_exam = class(Tfrm_base_pgc)

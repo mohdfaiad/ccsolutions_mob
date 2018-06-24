@@ -1,4 +1,4 @@
-unit class_rest_param_contract;
+unit class_rest_contract;
 
 interface
 

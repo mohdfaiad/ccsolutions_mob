@@ -18,10 +18,11 @@ uses
   ufrm_login_lab in '..\..\..\ufrm_login_lab.pas' {frm_login_lab},
   ufrm_main in '..\..\..\mobilelab\ufrm_main.pas' {frm_main},
   class_rest_method in '..\..\..\class_rest_method.pas',
-  class_rest_param_contract in '..\..\..\class_rest_param_contract.pas',
+  class_rest_contract in '..\..\..\class_rest_contract.pas',
   ufrm_cc in '..\..\..\ufrm_cc.pas',
   ufrm_frame_progress in '..\..\..\models\ufrm_frame_progress.pas' {frm_frame_progress: TFrame},
-  ufrm_contact in '..\..\..\ufrm_contact.pas' {frm_contact};
+  ufrm_contact in '..\..\..\ufrm_contact.pas' {frm_contact},
+  ufrm_splash in 'ufrm_splash.pas' {frm_splash};
 
 {$R *.res}
 
@@ -30,6 +31,6 @@ begin
   Application.CreateForm(Tfrm_cm, frm_cm);
   Application.CreateForm(Tfrm_dm, frm_dm);
   Application.CreateForm(Tfrm_dm_rest, frm_dm_rest);
-  Application.CreateForm(Tfrm_main, frm_main);
+  Application.CreateForm(Tfrm_splash, frm_splash);
   Application.Run;
 end.

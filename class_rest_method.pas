@@ -2,7 +2,7 @@ unit class_rest_method;
 
 interface
 
-uses class_rest_param_contract;
+uses class_rest_contract;
 
 type
   Trest_config = class(Tparam_contract)

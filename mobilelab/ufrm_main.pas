@@ -3,11 +3,48 @@ unit ufrm_main;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
-  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, ufrm_main_base_laboratory, System.ImageList, FMX.ImgList,
-  System.Actions, FMX.ActnList, FMX.ListBox, FMX.Objects, FMX.Layouts, FMX.MultiView, FMX.Controls.Presentation, ufrm_login_lab, ufrm_enterprise,
-  ufrm_exam, ufrm_insurance, ufrm_frame_progress, ufrm_contact, Androidapi.Jni.GraphicsContentViewText,Androidapi.Jni.Net,
-  Androidapi.Jni.JavaTypes, idUri, Androidapi.Jni,Androidapi.JNIBridge, Androidapi.Helpers, class_rest_method;
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants,
+  System.ImageList,
+  System.Actions,
+
+  FMX.Types,
+  FMX.Graphics,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Dialogs,
+  FMX.StdCtrls,
+  FMX.ImgList,
+  FMX.ActnList,
+  FMX.ListBox,
+  FMX.Objects,
+  FMX.Layouts,
+  FMX.MultiView,
+  FMX.Controls.Presentation,
+
+  {$IFDEF ANDROID}
+    Androidapi.Jni.GraphicsContentViewText,
+    Androidapi.Jni.Net,
+    Androidapi.Jni.JavaTypes,
+    Androidapi.Jni,
+    Androidapi.JNIBridge,
+    Androidapi.Helpers,
+  {$ENDIF}
+
+  idUri,
+
+  class_rest_method,
+
+  ufrm_main_base_laboratory,
+  ufrm_login_lab, ufrm_enterprise,
+  ufrm_exam,
+  ufrm_insurance,
+  ufrm_frame_progress,
+  ufrm_contact;
+
 
 type
   Tfrm_main = class(Tfrm_main_base_laboratory)
@@ -33,21 +70,25 @@ implementation
 {$R *.fmx}
 
 procedure Tfrm_main.lbl_contactClick(Sender: TObject);
-var
-  openURL : JIntent;
+{$IFDEF ANDROID}
+  var
+    openURL : JIntent;
+{$ENDIF}
 begin
   inherited;
-  try
+  {$IFDEF ANDROID}
     try
-      openURL := TJIntent.JavaClass.init(TJIntent.JavaClass.ACTION_VIEW);
-      //openURL.setPackage(StringToJString('com.google.android.youtube'));
-      openURL.setData(TJnet_Uri.JavaClass.parse(StringToJString(Trest_config.contact)));
-      SharedActivity.startActivity(openURL);
-    except on E: Exception do
-      ShowMessage('Error: ' + E.Message);
+      try
+        openURL := TJIntent.JavaClass.init(TJIntent.JavaClass.ACTION_VIEW);
+        //openURL.setPackage(StringToJString('com.google.android.youtube'));
+        openURL.setData(TJnet_Uri.JavaClass.parse(StringToJString(Trest_config.contact)));
+        SharedActivity.startActivity(openURL);
+      except on E: Exception do
+        ShowMessage('Error: ' + E.Message);
+      end;
+    finally
     end;
-  finally
-  end;
+  {$ENDIF}
 end;
 
 procedure Tfrm_main.lbl_enterpriseClick(Sender: TObject);
@@ -155,21 +196,25 @@ begin
 end;
 
 procedure Tfrm_main.lbl_resultClick(Sender: TObject);
-var
-  openURL : JIntent;
+{$IFDEF ANDROID}
+  var
+    openURL : JIntent;
+{$ENDIF}
 begin
   inherited;
-try
+  {$IFDEF ANDROID}
     try
-      openURL := TJIntent.JavaClass.init(TJIntent.JavaClass.ACTION_VIEW);
-      //openURL.setPackage(StringToJString('com.google.android.youtube'));
-      openURL.setData(TJnet_Uri.JavaClass.parse(StringToJString('http://cdlaboratorio.dyndns.org:8081/')));
-      SharedActivity.startActivity(openURL);
-    except on E: Exception do
-      ShowMessage('Error: ' + E.Message);
+      try
+        openURL := TJIntent.JavaClass.init(TJIntent.JavaClass.ACTION_VIEW);
+        //openURL.setPackage(StringToJString('com.google.android.youtube'));
+        openURL.setData(TJnet_Uri.JavaClass.parse(StringToJString('http://cdlaboratorio.dyndns.org:8081/')));
+        SharedActivity.startActivity(openURL);
+      except on E: Exception do
+        ShowMessage('Error: ' + E.Message);
+      end;
+    finally
     end;
-  finally
-  end;
+  {$ENDIF}
 end;
 
 procedure Tfrm_main.ShowActivity;
