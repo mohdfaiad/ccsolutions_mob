@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2018/06/12 07:01:00.000.370,C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\ufrm_mobilelab.fmx</Transaction>
-    <Transaction>2018/06/12 07:01:11.000.635,C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\mobilelab.dproj</Transaction>
-    <Transaction>2018/06/13 10:41:40.000.167,C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_frame_progress.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\Unit1.fmx</Transaction>
-    <Transaction>2018/06/21 19:28:58.000.671,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_contact.fmx</Transaction>
-    <Transaction>2018/06/24 13:31:29.197,C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_splash_base.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\Unit1.fmx</Transaction>
-    <Transaction>2018/06/24 13:41:50.135,C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_splash.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_splash_base.fmx</Transaction>
-    <Transaction>2018/06/24 13:42:01.713,C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_splash.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_splash.fmx</Transaction>
-    <Transaction>2018/06/24 13:43:59.511,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\ufrm_splash.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_splash.fmx</Transaction>
+    <Transaction>2018/06/12 07:01:00.000.370,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\ufrm_mobilelab.fmx=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2018/06/12 07:01:11.000.635,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\mobilelab.dproj=C:\Users\eltonbahia\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018/06/13 10:41:40.000.167,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_frame_progress.fmx</Transaction>
+    <Transaction>2018/06/21 19:28:58.000.671,C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_contact.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\Unit1.fmx</Transaction>
+    <Transaction>2018/06/24 13:31:29.000.197,C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\Unit1.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_splash_base.fmx</Transaction>
+    <Transaction>2018/06/24 13:41:50.000.135,C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_splash_base.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_splash.fmx</Transaction>
+    <Transaction>2018/06/24 13:42:01.000.713,C:\development\ccsolutions\ccsolutions_mob\trunk\models\ufrm_splash.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_splash.fmx</Transaction>
+    <Transaction>2018/06/24 13:43:59.000.511,C:\development\ccsolutions\ccsolutions_mob\trunk\ufrm_splash.fmx=C:\development\ccsolutions\ccsolutions_mob\trunk\projects\laboratorio_cdl\mobilelab\ufrm_splash.fmx</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile iOSSimulator="iPhone5" Android="192.168.88.105:5555"/>
+		<NoProfile iOSSimulator="iPhone5" Android="f39dee69"/>
 		<Pmacbook-air iOSSimulator="iPhone5"/>
 	</ActiveMobileDevice>
 </BorlandProject>
