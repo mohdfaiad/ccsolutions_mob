@@ -3,9 +3,31 @@ unit ufrm_login_base;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts, FMX.StdCtrls, FMX.Controls.Presentation, FMX.Edit, System.ImageList,
-  FMX.ImgList, System.Actions, FMX.ActnList, System.JSON, ufrm_cm, System.JSON.Readers, System.JSON.Types, FMX.Objects;
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants,
+  System.ImageList,
+  System.Actions,
+  System.JSON,
+  System.JSON.Readers,
+  System.JSON.Types,
+
+  FMX.Types,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Graphics,
+  FMX.Dialogs,
+  FMX.Layouts,
+  FMX.StdCtrls,
+  FMX.Controls.Presentation,
+  FMX.Edit,
+  FMX.ImgList,
+  FMX.ActnList,
+  FMX.Objects,
+
+  ufrm_cm;
 
 type
   Tfrm_login_base = class(TForm)
@@ -57,7 +79,7 @@ begin
     Exit
   end;
 
-  lResult := frm_cm.srv_methodsClient.user_authentication(edt_username.Text, edt_password.Text);
+//  lResult := frm_cm.srv_methodsClient.user_authentication(edt_username.Text, edt_password.Text);
 
   lStrReader := TStringReader.Create(lResult);
   lJsonReader := TJsonTextReader.Create(lStrReader);

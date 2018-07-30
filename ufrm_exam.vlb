@@ -43,17 +43,11 @@ Coordinates=230,10,134,33
 Visible=False
 
 []
-Coordinates=172,366,58,33
+Coordinates=680,180,82,33
 Visible=False
 
-[BindSourceDB1]
-Coordinates=160,10,124,465
-
-[BindingsList1]
-Coordinates=68,260,82,33
-
 [frm_dm.mem_product]
-Coordinates=160,10,123,33
+Coordinates=170,10,123,33
 Visible=False
 
 [rec_data]
@@ -102,7 +96,8 @@ Visible=False
 Coordinates=263,621,93,33
 
 [lsv_record]
-Coordinates=10,10,89,231
+Coordinates=10,10,89,195
+Visible=True
 
 [toolbar_data_top]
 Coordinates=164,621,97,33
@@ -177,4 +172,10 @@ Visible=False
 
 [edt_name]
 Coordinates=360,10,62,51
+
+[BindSourceDB1]
+Coordinates=170,10,124,447
+
+[BindingsList1]
+Coordinates=78,170,82,33
 

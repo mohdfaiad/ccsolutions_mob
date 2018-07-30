@@ -148,14 +148,14 @@ inherited frm_exam: Tfrm_exam
   object BindSourceDB1: TBindSourceDB
     DataSet = frm_dm.mem_product
     ScopeMappings = <>
-    Left = 304
-    Top = 272
+    Left = 380
+    Top = 301
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 304
-    Top = 224
+    Left = 380
+    Top = 253
     object LinkListControlToField1: TLinkListControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
@@ -164,11 +164,7 @@ inherited frm_exam: Tfrm_exam
       FillExpressions = <
         item
           SourceMemberName = 'pro_initials'
-          ControlMemberName = 'Detail1'
-        end
-        item
-          SourceMemberName = 'pro_gender'
-          ControlMemberName = 'Detail2'
+          ControlMemberName = 'Detail'
         end>
       FillHeaderExpressions = <>
       FillBreakGroups = <>
@@ -183,22 +179,22 @@ inherited frm_exam: Tfrm_exam
     object LinkControlToField2: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
-      FieldName = 'pro_gender'
-      Control = edt_gender
+      FieldName = 'pro_initials'
+      Control = edt_initials
       Track = False
     end
     object LinkControlToField3: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
-      FieldName = 'pro_description'
-      Control = mem_description
+      FieldName = 'pro_gender'
+      Control = edt_gender
       Track = False
     end
     object LinkControlToField4: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
-      FieldName = 'pro_initials'
-      Control = edt_initials
+      FieldName = 'pro_description'
+      Control = mem_description
       Track = False
     end
   end

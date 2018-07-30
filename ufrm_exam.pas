@@ -50,9 +50,6 @@ uses
 
 type
   Tfrm_exam = class(Tfrm_base_pgc)
-    BindSourceDB1: TBindSourceDB;
-    BindingsList1: TBindingsList;
-    LinkListControlToField1: TLinkListControlToField;
     lyt_name: TLayout;
     lyt_initials: TLayout;
     lyt_gender: TLayout;
@@ -65,6 +62,9 @@ type
     edt_initials: TEdit;
     edt_gender: TEdit;
     mem_description: TMemo;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkListControlToField1: TLinkListControlToField;
     LinkControlToField1: TLinkControlToField;
     LinkControlToField2: TLinkControlToField;
     LinkControlToField3: TLinkControlToField;
@@ -93,30 +93,30 @@ end;
 procedure Tfrm_exam.FormCreate(Sender: TObject);
 begin
   inherited;
-  Trest_config.v_method := 'get_product';
-  Trest_config.v_parameter := Trest_config.contract_ctr_cod;
-  Trest_config.v_root_element := 'product';
+  Trest_config.v_method         := 'get_product';
+  Trest_config.v_parameter      := Trest_config.contract_ctr_cod;
+  Trest_config.v_root_element   := 'product';
 
   frm_dm_rest.get_exam_mobile;
 
   {$IFDEF WIN32}
-    edt_name.Margins.Top := 25;
-    edt_initials.Margins.Top := 25;
-    edt_gender.Margins.Top := 25;
+    edt_name.Margins.Top        := 25;
+    edt_initials.Margins.Top    := 25;
+    edt_gender.Margins.Top      := 25;
     mem_description.Margins.Top := 25;
   {$ENDIF}
 
   {$IFDEF WIN64}
-    edt_name.Margins.Top := 25;
-    edt_initials.Margins.Top := 25;
-    edt_gender.Margins.Top := 25;
+    edt_name.Margins.Top        := 25;
+    edt_initials.Margins.Top    := 25;
+    edt_gender.Margins.Top      := 25;
     mem_description.Margins.Top := 25;
   {$ENDIF}
 
   {$IFDEF MACOS}
-    edt_name.Margins.Top := 25;
-    edt_initials.Margins.Top := 25;
-    edt_gender.Margins.Top := 25;
+    edt_name.Margins.Top        := 25;
+    edt_initials.Margins.Top    := 25;
+    edt_gender.Margins.Top      := 25;
     mem_description.Margins.Top := 25;
   {$ENDIF}
 end;

@@ -11,7 +11,7 @@ Coordinates=325,161,77,33
 Coordinates=368,10,74,51
 
 [lsv_record]
-Coordinates=10,10,89,231
+Coordinates=10,10,89,195
 
 [tbctrl_1]
 Coordinates=163,161,51,33
@@ -41,5 +41,32 @@ Coordinates=29,260,83,33
 Coordinates=261,80,93,33
 
 [btn_close_data]
-Coordinates=305,10,53,51
+Coordinates=305,10,89,51
+
+[rct_data_top]
+Coordinates=16,170,76,33
+
+[rec_data]
+Coordinates=261,132,56,33
+
+[btn_close_record]
+Coordinates=118,80,100,51
+
+[imglist_1]
+Coordinates=261,184,58,33
+
+[rec_record]
+Coordinates=261,236,67,33
+
+[ChangeTabAction_record]
+Coordinates=440,80,140,33
+
+[ChangeTabAction_data]
+Coordinates=440,132,129,33
+
+[actlist_1]
+Coordinates=202,241,55,33
+
+[rct_record_top]
+Coordinates=113,241,87,33
 

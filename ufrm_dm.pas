@@ -3,43 +3,26 @@ unit ufrm_dm;
 interface
 
 uses
-  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
-  FireDAC.DApt.Intf, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+  System.SysUtils,
+  System.Classes,
+
+  FireDAC.Stan.Intf,
+  FireDAC.Stan.Option,
+  FireDAC.Stan.Param,
+  FireDAC.Stan.Error,
+  FireDAC.DatS,
+  FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf,
+  FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client,
+
+  Data.DB;
 
 type
   Tfrm_dm = class(TDataModule)
     mem_enterprise: TFDMemTable;
     mem_insurance: TFDMemTable;
     mem_product: TFDMemTable;
-    mem_enterpriseent_cod: TStringField;
-    mem_enterpriseent_id: TIntegerField;
-    mem_enterpriseent_type: TStringField;
-    mem_enterpriseent_first_name: TStringField;
-    mem_enterpriseent_last_name: TStringField;
-    mem_enterpriseent_nickname: TStringField;
-    mem_enterpriseent_email: TStringField;
-    mem_enterpriseent_cnpj: TStringField;
-    mem_enterpriseent_ie: TStringField;
-    mem_enterpriseent_im: TStringField;
-    mem_enterpriseent_suframa: TStringField;
-    mem_enterpriseent_add_bus_zipcode: TStringField;
-    mem_enterpriseent_add_bus_address: TStringField;
-    mem_enterpriseent_add_bus_number: TStringField;
-    mem_enterpriseent_add_bus_street: TStringField;
-    mem_enterpriseent_add_bus_complement: TStringField;
-    mem_enterpriseent_add_bus_city: TStringField;
-    mem_enterpriseent_add_bus_state: TStringField;
-    mem_enterpriseent_add_bus_country: TStringField;
-    mem_enterpriseent_phone1: TStringField;
-    mem_enterpriseent_phone2: TStringField;
-    mem_enterpriseent_phone3: TStringField;
-    mem_enterpriseent_phone4: TStringField;
-    mem_enterpriseent_contact: TStringField;
-    mem_enterpriseent_dt_open: TDateField;
-    mem_enterpriseent_status: TStringField;
-    mem_enterpriseent_deleted_at: TDateTimeField;
-    mem_enterpriseent_dt_registration: TDateTimeField;
-    mem_enterpriseparam_end_add_bus: TStringField;
     mem_productpro_cod: TStringField;
     mem_productpro_id: TIntegerField;
     mem_productpro_type: TStringField;
@@ -85,6 +68,37 @@ type
     mem_insuranceins_deleted_at: TDateTimeField;
     mem_insuranceins_dt_registration: TDateTimeField;
     mem_productpro_dt_registration: TDateTimeField;
+    mem_enterprisecontract_ctr_cod: TStringField;
+    mem_enterpriseent_cod: TStringField;
+    mem_enterpriseent_id: TLongWordField;
+    mem_enterpriseent_type: TStringField;
+    mem_enterpriseent_first_name: TStringField;
+    mem_enterpriseent_last_name: TStringField;
+    mem_enterpriseent_nickname: TStringField;
+    mem_enterpriseent_email: TStringField;
+    mem_enterpriseent_cnpj: TStringField;
+    mem_enterpriseent_ie: TStringField;
+    mem_enterpriseent_im: TStringField;
+    mem_enterpriseent_suframa: TStringField;
+    mem_enterpriseent_add_bus_zipcode: TStringField;
+    mem_enterpriseent_add_bus_address: TStringField;
+    mem_enterpriseent_add_bus_number: TStringField;
+    mem_enterpriseent_add_bus_street: TStringField;
+    mem_enterpriseent_add_bus_complement: TStringField;
+    mem_enterpriseent_add_bus_city: TStringField;
+    mem_enterpriseent_add_bus_state: TStringField;
+    mem_enterpriseent_add_bus_country: TStringField;
+    mem_enterpriseent_phone1: TStringField;
+    mem_enterpriseent_phone2: TStringField;
+    mem_enterpriseent_phone3: TStringField;
+    mem_enterpriseent_phone4: TStringField;
+    mem_enterpriseent_contact: TStringField;
+    mem_enterpriseent_dt_open: TDateField;
+    mem_enterpriseent_status: TStringField;
+    mem_enterpriseent_image1: TBlobField;
+    mem_enterpriseent_deleted_at: TDateTimeField;
+    mem_enterpriseent_dt_registration: TDateTimeField;
+    mem_enterpriseparam_end_add_bus: TStringField;
   private
     { Private declarations }
   public

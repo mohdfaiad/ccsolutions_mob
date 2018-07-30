@@ -4,7 +4,7 @@ object frm_base_pgc: Tfrm_base_pgc
   Caption = 'Form Default'
   ClientHeight = 480
   ClientWidth = 640
-  Position = Designed
+  Position = OwnerFormCenter
   WindowState = wsMaximized
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -62,8 +62,8 @@ object frm_base_pgc: Tfrm_base_pgc
             Size.PlatformDefault = False
             TabOrder = 0
             object lsv_record: TListView
-              ItemAppearanceClassName = 'TMultiDetailItemAppearance'
-              ItemEditAppearanceClassName = 'TMultiDetailDeleteAppearance'
+              ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+              ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
               HeaderAppearanceClassName = 'TListHeaderObjects'
               FooterAppearanceClassName = 'TListHeaderObjects'
               Align = Client

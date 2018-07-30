@@ -3,9 +3,30 @@ unit ufrm_dm_rest;
 interface
 
 uses
-  System.SysUtils, System.Classes, IPPeerClient, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
-  FireDAC.Phys.Intf, FireDAC.DApt.Intf, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, REST.Response.Adapter, REST.Client, Data.Bind.Components,
-  Data.Bind.ObjectScope, class_rest_method, ufrm_dm;
+  System.SysUtils,
+  System.Classes,
+
+  IPPeerClient,
+
+  FireDAC.Stan.Intf,
+  FireDAC.Stan.Option,
+  FireDAC.Stan.Param,
+  FireDAC.Stan.Error,
+  FireDAC.DatS,
+  FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf,
+  FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client,
+
+  REST.Response.Adapter,
+  REST.Client,
+
+  Data.DB,
+  Data.Bind.Components,
+  Data.Bind.ObjectScope,
+
+  class_rest_method,
+  ufrm_dm;
 
 type
   Tfrm_dm_rest = class(TDataModule)
@@ -75,8 +96,7 @@ begin
   try
     try
       begin
-        if Get(Trest_config.v_method, Trest_config.v_parameter) then
-        begin
+        if Get(Trest_config.v_method, Trest_config.v_parameter) then begin
           rest_response.RootElement := Trest_config.v_root_element;
 
           frm_dm.mem_enterprise.Close;
@@ -93,11 +113,11 @@ begin
             frm_dm.mem_enterprise.FieldByName('ent_phone4').AsString              := mem_rest.FieldByName('ent_phone4').AsString;
             frm_dm.mem_enterprise.FieldByName('ent_contact').AsString             := mem_rest.FieldByName('ent_contact').AsString;
             frm_dm.mem_enterprise.FieldByName('param_end_add_bus').AsString       := mem_rest.FieldByName('ent_add_bus_address').AsString +', '+
-                                                                                            mem_rest.FieldByName('ent_add_bus_number').AsString +' - '+
-                                                                                            mem_rest.FieldByName('ent_add_bus_street').AsString +', '+
-                                                                                            mem_rest.FieldByName('ent_add_bus_city').AsString +' - '+
-                                                                                            mem_rest.FieldByName('ent_add_bus_state').AsString +', '+
-                                                                                            mem_rest.FieldByName('ent_add_bus_zipcode').AsString;
+                                                                                     mem_rest.FieldByName('ent_add_bus_number').AsString +' - '+
+                                                                                     mem_rest.FieldByName('ent_add_bus_street').AsString +', '+
+                                                                                     mem_rest.FieldByName('ent_add_bus_city').AsString +' - '+
+                                                                                     mem_rest.FieldByName('ent_add_bus_state').AsString +', '+
+                                                                                     mem_rest.FieldByName('ent_add_bus_zipcode').AsString;
 
 
             frm_dm.mem_enterprise.Post;
@@ -107,10 +127,9 @@ begin
           Result := False;
         end;
       end;
-    except on E: Exception do
-      begin
-        Result := False;
-      end;
+    except on E: Exception do begin
+      Result := False;
+    end;
     end;
   finally
   end;
@@ -118,11 +137,10 @@ end;
 
 function Tfrm_dm_rest.get_exam_mobile: Boolean;
 begin
-try
+  try
     try
       begin
-        if Get(Trest_config.v_method, Trest_config.v_parameter) then
-        begin
+        if Get(Trest_config.v_method, Trest_config.v_parameter) then begin
           rest_response.RootElement := Trest_config.v_root_element;
 
           frm_dm.mem_product.Close;
@@ -143,10 +161,9 @@ try
           Result := False;
         end;
       end;
-    except on E: Exception do
-      begin
-        Result := False;
-      end;
+    except on E: Exception do begin
+      Result := False;
+    end;
     end;
   finally
   end;
@@ -154,11 +171,10 @@ end;
 
 function Tfrm_dm_rest.get_insurance_mobile: Boolean;
 begin
-try
+  try
     try
       begin
-        if Get(Trest_config.v_method, Trest_config.v_parameter) then
-        begin
+        if Get(Trest_config.v_method, Trest_config.v_parameter) then begin
           rest_response.RootElement := Trest_config.v_root_element;
 
           frm_dm.mem_insurance.Close;
@@ -176,10 +192,9 @@ try
           Result := False;
         end;
       end;
-    except on E: Exception do
-      begin
-        Result := False;
-      end;
+    except on E: Exception do begin
+      Result := False;
+    end;
     end;
   finally
   end;

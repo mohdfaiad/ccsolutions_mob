@@ -3,10 +3,36 @@ unit ufrm_base_pgc;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Controls.Presentation, FMX.StdCtrls, FMX.TabControl, FMX.ListView.Types,
-  FMX.ListView.Appearances, FMX.ListView.Adapters.Base, FMX.ListView, FMX.Layouts, FMX.ListBox, FMX.Objects, FMX.Edit, MultiDetailAppearanceU, FMX.Ani,
-  FMX.Effects, System.Actions, FMX.ActnList, System.ImageList, FMX.ImgList;
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants,
+  System.Actions,
+  System.ImageList,
+
+  FMX.Types,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Graphics,
+  FMX.Dialogs,
+  FMX.Controls.Presentation,
+  FMX.StdCtrls,
+  FMX.TabControl,
+  FMX.ListView.Types,
+  FMX.ListView.Appearances,
+  FMX.ListView.Adapters.Base,
+  FMX.ListView,
+  FMX.Layouts,
+  FMX.ListBox,
+  FMX.Objects,
+  FMX.Edit,
+  FMX.Ani,
+  FMX.Effects,
+  FMX.ActnList,
+  FMX.ImgList,
+
+  MultiDetailAppearanceU;
 
 type
   Tfrm_base_pgc = class(TForm)
@@ -62,7 +88,7 @@ end;
 
 procedure Tfrm_base_pgc.FormCreate(Sender: TObject);
 begin
-  lbl_record.Text := Self.Caption;
+  lbl_record.Text   := Self.Caption;
   lbl_data_top.Text := Self.Caption;
 end;
 

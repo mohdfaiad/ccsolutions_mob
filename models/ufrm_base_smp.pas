@@ -3,10 +3,34 @@ unit ufrm_base_smp;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls, FMX.Controls.Presentation, FMX.Layouts, FMX.Objects,
-  FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base, MultiDetailAppearanceU, System.ImageList, FMX.ImgList, System.Actions,
-  FMX.ActnList, FMX.TabControl, FMX.Effects, FMX.ListView, FMX.WebBrowser;
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants,
+  System.ImageList,
+  System.Actions,
+
+  FMX.Types,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Graphics,
+  FMX.Dialogs,
+  FMX.StdCtrls,
+  FMX.Controls.Presentation,
+  FMX.Layouts,
+  FMX.Objects,
+  FMX.ListView.Types,
+  FMX.ListView.Appearances,
+  FMX.ListView.Adapters.Base,
+  FMX.ImgList,
+  FMX.ActnList,
+  FMX.TabControl,
+  FMX.Effects,
+  FMX.ListView,
+  FMX.WebBrowser,
+
+  MultiDetailAppearanceU;
 
 type
   Tfrm_base_smp = class(TForm)
@@ -57,7 +81,7 @@ end;
 
 procedure Tfrm_base_smp.FormCreate(Sender: TObject);
 begin
-  lbl_record.Text := Self.Caption;
+  lbl_record.Text   := Self.Caption;
   lbl_data_top.Text := Self.Caption;
 end;
 

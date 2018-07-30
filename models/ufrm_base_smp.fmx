@@ -4,7 +4,7 @@ object frm_base_smp: Tfrm_base_smp
   Caption = 'Form Default'
   ClientHeight = 480
   ClientWidth = 640
-  Position = Designed
+  Position = OwnerFormCenter
   WindowState = wsMaximized
   FormFactor.Width = 320
   FormFactor.Height = 480

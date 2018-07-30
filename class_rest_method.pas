@@ -19,7 +19,7 @@ implementation
 
 function Trest_config.base_url(const Amethod, Aparameter: string): string;
 begin
-  Result := 'http://'+ address_wbs +'/api/public/methods/'+ Amethod +'/'+ Aparameter;
+  Result := 'http://'+ address_wbs +'/api/rest/methods/'+ Amethod +'/'+ Aparameter;
 end;
 
 end.

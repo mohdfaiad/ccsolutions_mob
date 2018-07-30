@@ -3,10 +3,9 @@ object frm_cm: Tfrm_cm
   Height = 438
   Width = 658
   object restconn: TDSRestConnection
-    Host = '192.168.88.151'
+    Host = '192.168.1.150'
     Port = 80
     Context = 'api/'
-    RESTContext = 'public/'
     LoginPrompt = False
     Left = 64
     Top = 16
