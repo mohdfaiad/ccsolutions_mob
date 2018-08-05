@@ -69,6 +69,8 @@ implementation
 
 {$R *.fmx}
 
+uses ufrm_login_base;
+
 procedure Tfrm_main.lbl_contactClick(Sender: TObject);
 {$IFDEF ANDROID}
   var
@@ -173,13 +175,13 @@ procedure Tfrm_main.lbl_loginClick(Sender: TObject);
 begin
   inherited;
   {$IFDEF WIN32}
-    frm_login_lab := Tfrm_login_lab.Create(Self);
-    frm_login_lab.Show;
+    frm_login_base := Tfrm_login_base.Create(Self);
+    frm_login_base.Show;
   {$ENDIF}
 
   {$IFDEF WIN64}
-    frm_login_lab := Tfrm_login_lab.Create(Self);
-    frm_login_lab.Show;
+    frm_login_base := Tfrm_login_base.Create(Self);
+    frm_login_base.Show;
   {$ENDIF}
 
   {$IFDEF MACOS}

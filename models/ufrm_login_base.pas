@@ -48,6 +48,7 @@ type
     edt_password: TEdit;
     lbl_signin: TLabel;
     lbl_signup: TLabel;
+    Edit1: TEdit;
     procedure Action_signinExecute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
@@ -62,6 +63,8 @@ var
 implementation
 
 {$R *.fmx}
+
+uses ufrm_cc;
 
 procedure Tfrm_login_base.Action_signinExecute(Sender: TObject);
 var
@@ -79,10 +82,11 @@ begin
     Exit
   end;
 
-//  lResult := frm_cm.srv_methodsClient.user_authentication(edt_username.Text, edt_password.Text);
+  lResult := ufrm_cc.methodsClient.contract_user_signin(Edit1.Text.ToInt64, edt_username.Text, edt_password.Text);
 
   lStrReader := TStringReader.Create(lResult);
   lJsonReader := TJsonTextReader.Create(lStrReader);
+
   try
     try
       while lJsonReader.Read do

@@ -5,6 +5,7 @@ interface
 uses
   System.SysUtils,
   System.Classes,
+  System.JSON,
 
   IPPeerClient,
 
@@ -53,9 +54,6 @@ var
   frm_dm_rest: Tfrm_dm_rest;
 
 implementation
-
-uses
-  System.JSON;
 
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
