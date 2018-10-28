@@ -26,8 +26,7 @@ uses
   Data.Bind.Components,
   Data.Bind.ObjectScope,
 
-  class_rest_method,
-  ufrm_dm;
+  class_rest_method;
 
 type
   Tfrm_dm_rest = class(TDataModule)
@@ -54,6 +53,9 @@ var
   frm_dm_rest: Tfrm_dm_rest;
 
 implementation
+
+uses
+  ufrm_dm;
 
 {%CLASSGROUP 'FMX.Controls.TControl'}
 

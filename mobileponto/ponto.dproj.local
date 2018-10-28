@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/09/01 08:17:52.000.191,=C:\Users\elton\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/09/09 11:53:23.000.600,=C:\Users\elton\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/09/15 14:00:02.000.388,=C:\Users\elton\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/09/20 07:00:36.936,=C:\Users\elton\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/09/20 07:06:32.085,C:\development\ccsolutions\ccsolutions_mob\trunk\mobileponto\ufrm_ponto.pas=C:\Users\elton\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/09/20 07:06:32.085,C:\development\ccsolutions\ccsolutions_mob\trunk\mobileponto\ufrm_ponto.fmx=C:\Users\elton\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2018/09/20 07:06:35.098,C:\development\ccsolutions\ccsolutions_mob\trunk\mobileponto\ponto.dproj=C:\Users\elton\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
