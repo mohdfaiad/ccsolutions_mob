@@ -1,0 +1,14 @@
+program mobwhatsapp;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  ufrm_main in 'ufrm_main.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
